@@ -1,0 +1,112 @@
+/* Styling that applies to the root element of the document */
+:root {
+    /* Colors used on the page / List of variables for reuse in the application */
+    --color-secondary: #6c757d;
+    --color-success: #b5d56a;
+    --color-info: #84bed6;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+    --color-white: #fff;
+    --color-transparent: transparent; /* Used to make a border transparent */
+    --color-border: #dee2e6;
+    --color-dark-transparent: rgba(0, 0, 0, 0.2);
+
+    /* Differences font sizes for display on the page / List of variables for reuse in the application */
+    --display-xxs: 1rem; 
+    --display-xs: 1.4rem;
+    --display-sm: 1.6rem;
+    --display-md: 1.8rem;
+    --display-lg: 2rem;
+    --display-xl: 2.5rem;
+    --display-xxl: 3rem;
+
+    /* Different line heights used based on the page / List of variables for reuse in the application */
+    --line-height-sm: 1rem;
+    --line-height-md: 1.6rem;
+    --line-height-lg: 3rem;
+
+    /* Different distances used on the page, changes in 2.5 pixels / List of variables for reuse in the application */
+    --distance-0: 0rem;
+    --distance-1: .25rem; 
+    --distance-2: .5rem;
+    --distance-3: .75rem;
+    --distance-4: 1rem;
+    --distance-5: 1.25rem;
+    --distance-6: 1.5rem;
+    --distance-7: 1.75rem;
+    --distance-8: 2rem;
+    --distance-9: 2.25rem;
+    --distance-10: 2.5rem;
+    --distance-11: 2.75rem;
+    --distance-12: 3rem;
+    --distance-13: 3.25rem;
+    --distance-14: 3.5rem;
+    --distance-15: 3.75rem;
+    --distance-16: 4rem;
+
+    /* Borders used for the page */
+    --border-xs-white: 0.1rem solid var(--color-white); /* Equivalent to 1 pixel and use variable to get the color specified above */
+    --border-xs: .1rem solid var(--color-light);
+    --border-sm: .2rem solid var(--color-light); /* Equivalent to 2 pixels */
+    --border-lg: .4rem solid var(--color-white); /* Equivalent to 4 pixels */
+
+    --border-radius-sm: .25rem; /* Rounded edges */
+    --border-success: .2rem solid var(--border-color-success); 
+    --border-transparent: .1 solid var(--color-transparent); /* Makes a border invisible */
+}
+
+/* A manual reset of CSS that selects all elements in the document. Removes all default margins and paddings on the elements. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* All elements and all the elements before and after them will inherit the setting for the box-sizing defined in the html element */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Selects the html element and this applies to the html document */
+html {
+    box-sizing: border-box; /* Explicitly states that the border is NOT included in the element's size. The element will have its stated sizes and the border will surround it */
+    font-size: 62.50% /* 1rem is equivalent to 10px. The default font size on pages is 16px. The calculation to change this default and use 10px instead is to divide 10px with 16px, which equals 62.5% */
+}
+
+/* Default settings for the text in the body element */
+body {
+    font-family: 'Open Sans', sans-serif; /* Chosen default font and second choice that is the brower's default sans-serif font */
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-dark); /* Use of variable specified above */
+    font-size: var(--display-sm); /* Use of variable specified above and sets it to default 16px */
+    min-height: 100vh; /* Full viewport height for the page */
+}
+
+/* Background colors used for the page */
+.bg-secondary, .btn-secondary { background-color: var(--color-secondary); }
+.bg-success, .btn-success { background-color: var(--color-success); }
+.bg-info, .btn-info { background-color: var(--color-info); }
+.bg-light, .btn-light { background-color: var(--color-light); }
+.bg-dark, .btn-dark { background-color: var(--color-dark); }
+.bg-white, .btn-white { background-color: var(--color-white); }
+.bg-transparent { background-color: var(--color-transparent); }
+.bg-dark-transparent { background-color: var(--color-dark-transparent); }
+
+/* Text colors used for the page */
+.text-secondary { color: var(--color-secondary); }
+.text-success { color: var(--color-success); }
+.text-info { color: var(--color-info); }
+.text-light { color: var(--color-light); }
+.text-dark { color: var(--color-dark); }
+.text-white { color: var(--color-white); }
+
+/* Border colors used for the page / !important overrides and ensures the below syntax precede any other styling in the application */
+.border-color-secondary { border-color: var(--color-secondary)!important; }
+.border-color-success { border-color: var(--color-success)!important; }
+.border-color-info { border-color: var(--color-info)!important; }
+.border-color-light { border-color: var(--color-light)!important; }
+.border-color-dark { border-color: var(--color-dark)!important; }
+.border-color-white { border-color: var(--color-white)!important; }
+

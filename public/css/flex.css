@@ -1,0 +1,15 @@
+/* Display setting */
+
+/* Explicity state that the display should be flexible with rows and columns depending on the page size */
+.display-flex { display: flex; }
+
+/* Settings for the use of flex */
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+
+/* Settings to align and justify the items/elements on the page */
+.justify-content-between { justify-content: space-between; }
+.justify-content-center { justify-content: center; } /* Centers the content in the element */
+.justify-content-around { justify-content: space-around; }
+.align-items-center { align-items: center; }
