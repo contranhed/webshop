@@ -84,6 +84,17 @@ body {
     min-height: 100vh; /* Full viewport height for the page */
 }
 
+/* Default settings for the fonts */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: "Dosis", "Open Sans", sans-serif; /* First font choice, second font choice. Third option is the browser's default sans-serif font */
+    font-weight: 700; /* Bolder text */
+    letter-spacing: .05rem; 
+}
+
+.ht, h1 {
+    font-size: var(--distance-13); /* Use of the variable defined above. Equals 3.5rem */
+}
+
 /* Background colors used for the page */
 .bg-secondary, .btn-secondary { background-color: var(--color-secondary); }
 .bg-success, .btn-success { background-color: var(--color-success); }

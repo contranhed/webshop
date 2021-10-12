@@ -2,6 +2,9 @@
 
 /* Explicity state that the display should be flexible with rows and columns depending on the page size */
 .display-flex { display: flex; }
+.display-block { display: block; }
+.display-none { display: none; }
+.display-inline-block { display: inline-block; }
 
 /* Settings for the use of flex */
 .flex-row { flex-direction: row; }
@@ -12,4 +15,7 @@
 .justify-content-between { justify-content: space-between; }
 .justify-content-center { justify-content: center; } /* Centers the content in the element */
 .justify-content-around { justify-content: space-around; }
+.justify-content-space-evenly { justify-content: space-evenly; }
+.justify-content-space-around { justify-content: space-around}
 .align-items-center { align-items: center; }
+.align-items-left { align-items: left; }

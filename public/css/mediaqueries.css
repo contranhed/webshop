@@ -1,0 +1,3 @@
+@media screen and (max-width: 37.5em) { /* 600px/16px = 37.5em */ 
+    .contact-hidden { display: none; }
+}

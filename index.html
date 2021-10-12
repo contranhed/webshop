@@ -7,27 +7,28 @@
     <link rel="stylesheet" href="./public/css/base.css">
     <link rel="stylesheet" href="./public/css/layout.css">
     <link rel="stylesheet" href="./public/css/flex.css">
+    <link rel="stylesheet" href="./public/css/mediaqueries.css">
     <script src="https://kit.fontawesome.com/c016a9893b.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
     <title>Web shop</title>
 </head>
 <body>
     <header>
-      <!-- Top Bar -->
-      <section class="display-flex flex-row justify-content-between bg-dark text-light">
-
+      <!-- Nav Bar -->
+      <section class="display-flex flex-row justify-content-between bg-dark text-light height-nav">
+        
         <!-- Drop-down button -->
-        <div class="dropdown">    
-          <button onclick="dropDownMenu()" class="dropbtn border-radius bg-dark text-light m-6 p-4"> <i class="fas fa-user text-light p-2 mr-4"></i>Ada Lovelace<i class="fas fa-caret-down ml-4"></i></button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#">Grace Hopper </a>
-              <a href="#">Ada Lovelace</a>
-              <a href="#">Margaret Hamilton</a>  
-            </div>
+        <div class="dropdown display-flex display-inline-block justify-content-center align-items-center mx-2 p-2 bg-dark text-light">
+            <button class="dropdown-btn btn-dark text-light border-small-light border-sm border-radius"><i class="display-flex fas fa-user text-light p-1 text-size-xs mx-1 my-1"></i><a href="#" class="flex-column position-relative text-decoration-none text-size-xs ml-1 text-light"></i>Ada Lovelace</a><i class="fas fa-caret-down mx-2"></i></button>
+            <ul class="text-size-xs list-style-none no-list position-absolute display-flex flex-column border-radius align-items-left flex-column lh-lg bg-light">
+              <li class=""><a href="#" class="list-item text-decoration-none text-dark display-flex flex-column align-items-left p-2">Grace Hopper</a></li>
+              <li class=""><a href="#" class="list-item text-decoration-none text-dark display-flex flex-column align-items-left p-2">Ada Lovelace</a></li>
+              <li class=""><a href="#" class="list-item text-decoration-none text-dark display-flex flex-column align-items-left p-2">Margaret Hamilton</a></li>
+            </ul>
         </div>
 
         <!-- Contact details -->
-        <div class="display-flex flex-row justify-content-center align-items-center">
+        <div class="display-flex flex-row justify-content-between align-items-center text-size-xs contact-hidden">
           <div class="mr-4">
             <i class="fas fa-phone-alt"></i>
             <span>555 555 555</span>
@@ -38,12 +39,28 @@
           </div>
         </div>
 
-
         <!-- Social media icons -->
+        <div class="display-flex flex-row justify-content-space-evenly align-items-center mx-4 my-4">
+
+            <!-- Icon -->
+            <div class="display-flex">
+              <a href="#"><i class="fab fa-facebook-square icon text-size-xl bg-dark text-light "></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <div class="mx-4 my-4">
+          <div>
+            <h6 class="text-uppercase text-secondary ls-spacing-sm">my store</h6>
+          </div>
+        </div>
 
 
       </section>
-    </header>
 
+    </header>
 </body>
 </html>
