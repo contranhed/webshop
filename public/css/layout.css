@@ -5,6 +5,17 @@
 .lh-lg { line-height: var(--line-height-lg); }
 
 .height-nav { height: 4rem; }
+.icon-size { width: 40px; height: 40px; font-size: var(--display-xxs); }
+
+/* Position settings */
+.position-relative { position: relative !important; } 
+.position-absolute { position: absolute !important; }
+.overflow-hidden { overflow: hidden; }
+.centerXY { /* Used in absolute positioning to center the elements/items */
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* Margin settings */
 .mr-auto, .mx-auto { margin-right: auto; } /* Centers the margin outside of the div */
@@ -54,6 +65,7 @@
 /* Width settings */
 /* Set the max width for the page regardless how stretched it is */
 .max-width { max-width: 192rem; } /* Equivalent to 1920 pixels */
+.icon-width { width: 37.5rem; }
 
 /* Typography setting */
 .text-decoration-none { text-decoration: none; }
@@ -83,28 +95,18 @@
 .border-radius { border-radius: var(--border-radius-sm); }
 .border-radius-nav { border-radius: 0rem, 0rem, .25rem, .25rem }
 .border-bottom-xs { border-bottom: var(--border-xs); }
+.border-xs { border: var(--border-xs-light); }
+.border-md { border: var(--border-md-dark); }
 .border-sm { border: var(--border-sm); }
 .border-lg { border: var(--border-lg); }
 .border-transparent { border: var(--border-transparent); }
 
-
-
 /* Nav button settings */ 
-.dropdown { 
-  z-index: 2;
-  position: relative;
-}
+.dropdown { z-index: 2; position: relative; } /* Tried to use classes but the sizing got wrong then */
 
-.dropdown button:focus + ul { 
-  opacity: 1;
-  pointer-events: all;
-}
+.dropdown button:focus + ul { opacity: 1; pointer-events: all; }
 
-.no-list { 
-  opacity: 0; 
-  transition: all 0.4s ease;
-  pointer-events: none;
-}
+.no-list { opacity: 0; transition: all 0.4s ease; pointer-events: none; } 
 
 .dropdown-btn:hover {
   background-color: var(--color-info); 

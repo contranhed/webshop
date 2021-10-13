@@ -19,3 +19,5 @@
 .justify-content-space-around { justify-content: space-around}
 .align-items-center { align-items: center; }
 .align-items-left { align-items: left; }
+.align-items-stretch { align-items: stretch; }
+.align-content-stretch { align-content: stretch; }

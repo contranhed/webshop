@@ -45,9 +45,10 @@
     --distance-16: 4rem;
 
     /* Borders used for the page */
-    --border-xs-white: 0.1rem solid var(--color-white); /* Equivalent to 1 pixel and use variable to get the color specified above */
+    --border-xs-light: 0.1rem solid var(--color-light); /* Equivalent to 1 pixel and use variable to get the color specified above */
     --border-xs: .1rem solid var(--color-light);
     --border-sm: .2rem solid var(--color-light); /* Equivalent to 2 pixels */
+    --border-md: .3rem solid var(--color-dark); /* Equivalent to 3 pixels */
     --border-lg: .4rem solid var(--color-white); /* Equivalent to 4 pixels */
 
     --border-radius-sm: .25rem; /* Rounded edges */
@@ -120,4 +121,5 @@ body {
 .border-color-light { border-color: var(--color-light)!important; }
 .border-color-dark { border-color: var(--color-dark)!important; }
 .border-color-white { border-color: var(--color-white)!important; }
+.border-color-transparent {border-color: var(--color-transparent); }
 
