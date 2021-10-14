@@ -16,108 +16,119 @@
     <header>
 
       <!-- Top Bar -->
-      <section class="display-flex flex-row justify-content-between bg-dark text-light height-nav">
+      <section class="display-flex flex-row flex-grow flex-shrink justify-content-between align-items-center align-content-center">
         
-        <!-- Drop-down button -->
-        <div class="dropdown display-flex display-inline-block flex-row justify-content-center align-items-center text-size-lg my-2 mx-2 bg-dark text-light">
-            <button class="dropdown-btn btn-dark text-size-xs text-light border-small-light border-xs"><i class="fas fa-user display-flex flex-row justify-content-center align-items-center text-light text-size-xxs p-1 ml-1 my-1"></i><a href="#" class="flex-column justify-content-center align-items-senter position-relative text-decoration-none text-size-xs ml-1 text-light"></i>Ada Lovelace</a><i class="fas fa-caret-down my-2 mx-2"></i></button>
-            <ul class="text-size-xs list-style-none no-list display-flex flex-column align-items-left flex-column lh-lg bg-light">
-              <li class="display-flex flex-column align-items-left"><a href="#" class="list-item text-decoration-none text-dark p-2">Grace Hopper</a></li>
-              <li class="display-flex flex-column align-items-left"><a href="#" class="list-item text-decoration-none text-dark p-2">Ada Lovelace</a></li>
-              <li class="display-flex flex-column align-items-left"><a href="#" class="list-item text-decoration-none text-dark p-2">Margaret Hamilton</a></li>
-            </ul>
-        </div>
-
-        <!-- Contact details -->
-        <div class="display-flex flex-row justify-content-between align-items-center text-size-xs contact-hidden">
-          <div class="mr-4">
-            <i class="fas fa-phone-alt"></i>
-            <span>555 555 555</span>
+        <nav class="display-flex flex-row justify-content-between bg-dark text-light flex-grow flex-shrink height-nav">
+          <!-- Drop-down button -->
+          <div class="dropdown display-flex display-inline-block flex-row justify-content-center align-items-center text-size-lg my-2 mx-2">
+              <button class="dropdown-btn btn-dark border-small-light border-xs">
+                <i class="fas fa-user text-light text-size-xxs p-1 my-2 mx-1"></i>
+                <a href="#" class="text-decoration-none text-size-xs text-light"></i>Ada Lovelace</a>
+                <i class="fas fa-caret-down text-light text-size-xxs ml-1 mr-2"></i>
+              </button>
+              <ul class="display-flex flex-column align-items-left align-content-center lh-lg bg-light text-size-xs list-style-none no-list">
+                <li class="display-flex flex-column align-items-left">
+                  <a href="#" class="list-item text-decoration-none text-dark p-2">Grace Hopper</a>
+                </li>
+                <li class="display-flex flex-column align-items-left">
+                  <a href="#" class="list-item text-decoration-none text-dark p-2">Ada Lovelace</a>
+                </li>
+                <li class="display-flex flex-column align-items-left">
+                  <a href="#" class="list-item text-decoration-none text-dark p-2">Margaret Hamilton</a>
+                </li>
+              </ul>
           </div>
-          <div>
-            <i class="fas fa-envelope"></i>
-            <span>info@infostore.com</span>
+
+          <!-- Contact details -->
+          <div class="display-flex flex-row justify-content-between align-items-center align-content-center text-size-xs contact-hidden-sm">
+            <div class="mr-4 phone-hidden-sm">
+              <i class="fas fa-phone-alt"></i>
+              <span>555 555 555</span>
+            </div>
+            <div>
+              <i class="fas fa-envelope"></i>
+              <span>info@infostore.com</span>
+            </div>
           </div>
-        </div>
 
-	      <!-- Social Media Icons -->
-        <div class="display-flex flex-row justify-content-center align-items-center mr-4">
+          <!-- Social Media Icons -->
+          <div class="display-flex flex-row justify-content-between align-items-center align-content-center mr-4">
 
-  
-          <!-- Icon -->
-          <a href="#" class="text-decoration-none text-light border-radius">
-            <div class="display-flex text-size-xl p-1">
-              <i class="fab fa-facebook-square"></i>
-            </div>
-          </a>
-          
-          <!-- Icon -->        
-          <a href="#" class="text-decoration-none bg-light text-dark border-radius mr-1">
-            <div class="display-flex text-size-sm p-1">
-              <i class="fab fa-twitter"></i>
-            </div>
-          </a>
-
-          <!-- Icon -->          
-          <a href="#" class="text-decoration-none bg-light text-dark border-radius mr-1">
-            <div class="display-flex text-size-sm p-1">
-              <i class="fab fa-instagram"></i>
-            </div> 
-          </a>
-          
-          <!-- Icon -->          
-          <a href="#" class="text-decoration-none bg-light text-dark border-radius mr-1">
-            <div class="display-flex text-size-sm p-1">
-              <i class="fab fa-pinterest-p"></i>            
-            </div>
-          </a>
-        
-        </div>
-      </section>
-
-      <!-- Utility Section -->
-      <section class="display-flex flex-row justify-content-between">
-
-        <!-- Website name -->
-        <div class="display-flex flex-row justify-content-between align-items-center ml-6">
-          <div>
-            <h6 class="text-uppercase text-secondary ls-spacing-sm">my store</h6>
-          </div>
-        </div>
-
-        <!-- Search Bar -->
-        <div class="display-flex flex-row justify-content-between align-items-center ">
-          <div class="display-flex flex-row justify-content-between align-items-center border-md-dark border-sm">
-            <div class="bg-success p-2">
-              <i class="fas fa-search"></i>
-            </div>
-            
-            <form class="display-flex flex-row justify-content-between align-items-center">
-              <div>
-                <input type="text" class="border-color-transparent ml-1" placeholder="Search products...">
+    
+            <!-- Icon -->
+            <a href="#" class="text-decoration-none text-light border-radius">
+              <div class="display-flex flex-row text-size-xl p-1">
+                <i class="fab fa-facebook-square"></i>
               </div>
-            </form>
-          </div>
-        </div>
+            </a>
+            
+            <!-- Icon -->        
+            <a href="#" class="text-decoration-none bg-light text-dark border-radius mr-1">
+              <div class="display-flex flex-row text-size-sm p-1">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
 
-        <!-- Shopping Icons -->      
-        <div class="display-flex flex-row justify-content-between align-items-center">
-          <div class="mr-2">
-            <div>heart</div>
-            <div>favs</div>
-          </div>
-          <div class="mr-2">
-            <div>cart</div>
-            <div>cost</div>
-          </div>
-          <div class="class">
-            <div>receipt</div>
-            <div>cost</div>
+            <!-- Icon -->          
+            <a href="#" class="text-decoration-none bg-light text-dark border-radius mr-1">
+              <div class="display-flex flex-row text-size-sm p-1">
+                <i class="fab fa-instagram"></i>
+              </div> 
+            </a>
+            
+            <!-- Icon -->          
+            <a href="#" class="text-decoration-none bg-light text-dark border-radius mr-1">
+              <div class="display-flex flex-row text-size-sm p-1">
+                <i class="fab fa-pinterest-p"></i>            
+              </div>
+            </a>
+          
           </div>
 
+        </section>
 
+        <!-- Utility Section -->
+        <section class="display-flex flex-row flex-grow flex-shrink flex-wrap justify-content-between align-items-center">
+
+          <!-- Website name -->
+          <div class="display-flex flex-row justify-content-between align-items-center ml-6">
+            <div>
+              <h6 class="text-uppercase text-secondary ls-spacing-sm">my store</h6>
+            </div>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="display-flex flex-row flex-wrap flex-grow align-items-center align-content-flex-start order-last mx-6">
+              <form class="display-flex flex-row justify-content-flex-start align-content-center align-items-center border-color-secondary border-sm flex-grow flex-shrink">
+                <button type="submit" class="border-color-transparent"><i class="fas fa-search p-2"></i></button>
+                <input type="text" class="p-2 border-color-transparent" placeholder="Search products...">
+              </form>
+          </div>
+
+          <!-- Shopping Icons -->     
+          <div class="display-flex flex-row justify-content-center align-items-center align-content-center mr-6">
+
+            <div class="display-flex flex-row">
+              <div class="mr-2">
+                Hamburger btn
+              </div>
+              <div class="mr-2">
+                <div>heart</div>
+                <div>favs</div>
+              </div>
+              <div class="mr-2">
+                <div>cart</div>
+                <div>cost</div>
+              </div>
+              <div class="class">
+                <div>receipt</div>
+                <div>cost</div>
+              </div>
+            </div>
+          </div> 
+        </nav>
       </section>
-      <hr border-small-secondary border-xs>
+      <hr class="border-small-secondary border-xs">
     </header>
 </body>
 </html>

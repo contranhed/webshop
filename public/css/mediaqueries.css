@@ -1,3 +1,18 @@
-@media screen and (max-width: 37.5em) { /* 600px/16px = 37.5em */ 
-    .contact-hidden { display: none; }
+@media screen and (max-width: 50em) { /* 800px/16px = 50em */ 
+    .phone-hidden-sm { display: none; }
 }
+
+@media screen and (max-width: 43.75em) { /* 700px/16px = 43.75em */ 
+    .contact-hidden-sm { display: none; }
+    .flex-column-sm { flex-direction: column; }
+    .order-last { order: 1; }
+}
+
+@media screen and (max-width: 37.5em) { /* 600px/16px = 37.5em */ 
+    .contact-hidden-sm { display: none; }
+    .margin-sm { margin-left: var(--distance-2); }
+}  
+
+@media screen and (max-width: 25em) { /* 400px/16px = 25em */ 
+    .width-sm { width: 150%; }
+}  

@@ -66,12 +66,11 @@
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box; /* Explicitly states that the border is NOT included in the element's size. The element will have its stated sizes and the border will surround it */
 }
 
 /* Selects the html element and this applies to the html document */
 html {
-    box-sizing: border-box; /* Explicitly states that the border is NOT included in the element's size. The element will have its stated sizes and the border will surround it */
     font-size: 62.50% /* 1rem is equivalent to 10px. The default font size on pages is 16px. The calculation to change this default and use 10px instead is to divide 10px with 16px, which equals 62.5% */
 }
 

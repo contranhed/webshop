@@ -4,8 +4,7 @@
 .lh-md { line-height: var(--line-height-md); }
 .lh-lg { line-height: var(--line-height-lg); }
 
-.height-nav { height: 4rem; }
-.icon-size { width: 40px; height: 40px; font-size: var(--display-xxs); }
+.height-nav { height: 5rem; }
 
 /* Position settings */
 .position-relative { position: relative !important; } 
@@ -45,8 +44,8 @@
 
 .mr-1, .mx-1 { margin-right: var(--distance-1); } /* Equivalent to 1rem */
 .ml-1, .mx-1 { margin-left: var(--distance-1); }
-.mr-2, .mx-2 { margin-right: var(--distance-4); } /* Equivalent to 1rem */
-.ml-2, .mx-2 { margin-left: var(--distance-4); }
+.mr-2, .mx-2 { margin-right: var(--distance-2); } /* Equivalent to 1rem */
+.ml-2, .mx-2 { margin-left: var(--distance-2); }
 .mr-4, .mx-4 { margin-right: var(--distance-4); } /* Equivalent to 1rem */
 .ml-4, .mx-4 { margin-left: var(--distance-4); }
 .mr-6, .mx-6 { margin-right: var(--distance-6); } /* Equivalent to 1.5rem */
@@ -66,6 +65,9 @@
 /* Set the max width for the page regardless how stretched it is */
 .max-width { max-width: 192rem; } /* Equivalent to 1920 pixels */
 .icon-width { width: 37.5rem; }
+.searchbar-width { width: 36.5rem; }
+.dropdown-width { width: auto; }
+
 
 /* Typography setting */
 .text-decoration-none { text-decoration: none; }
@@ -92,6 +94,7 @@
 .border-small-white { border: var(--border-xs-white); }
 .border-small-light { border: var(--border-xs-light); }
 .border-small-dark { border: var(--border-xs-dark); }
+.border-small-primary { border: var(--border-xs-primary); }
 .border-radius { border-radius: var(--border-radius-sm); }
 .border-radius-nav { border-radius: 0rem, 0rem, .25rem, .25rem }
 .border-bottom-xs { border-bottom: var(--border-xs); }
@@ -102,7 +105,7 @@
 .border-transparent { border: var(--border-transparent); }
 
 /* Nav button settings */ 
-.dropdown { z-index: 2; position: relative; } /* Tried to use classes but the sizing got wrong then */
+.dropdown { z-index: 2;  } /* Tried to use class for z-index but the sizing got wrong then */
 
 .dropdown button:focus + ul { opacity: 1; pointer-events: all; }
 
@@ -117,8 +120,5 @@
   width: 100%;
   height: 100%;
 }
-
-
-
 
 
