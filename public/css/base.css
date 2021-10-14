@@ -4,8 +4,10 @@
     --color-secondary: #6c757d;
     --color-success: #00b300;
     --color-info: #84bed6;
+    --color-blue: rgb(104, 149, 228);
     --color-light: #f8f9fa;
     --color-dark: #343a40;
+    --color-grey: #e6e6e6;
     --color-white: #fff;
     --color-transparent: transparent; /* Used to make a border transparent */
     --color-border: #dee2e6;
@@ -48,13 +50,14 @@
     --border-xs-light: 0.1rem solid var(--color-light); /* Equivalent to 1 pixel and use variable to get the color specified above */
     --border-xs: .1rem solid var(--color-light);
     --border-xs-secondary: .1rem solid var(--color-secondary);
+    --border-xs-grey: .1rem solid var(--color-grey);
     --border-sm: .2rem solid var(--color-light); /* Equivalent to 2 pixels */
     --border-md: .3rem solid var(--color-dark); /* Equivalent to 3 pixels */
     --border-lg: .4rem solid var(--color-white); /* Equivalent to 4 pixels */
 
     --border-radius-sm: .25rem; /* Rounded edges */
-    --border-success: .2rem solid var(--border-color-success); 
     --border-transparent: .1 solid var(--color-transparent); /* Makes a border invisible */
+    --border-bottom: .2rem solid var(--color-grey);
 }
 
 /* A manual reset of CSS that selects all elements in the document. Removes all default margins and paddings on the elements. */
@@ -113,6 +116,7 @@ body {
 .text-light { color: var(--color-light); }
 .text-dark { color: var(--color-dark); }
 .text-white { color: var(--color-white); }
+.text-blue { color: var(--color-blue); }
 
 /* Border colors used for the page / !important overrides and ensures the below syntax precede any other styling in the application */
 .border-color-secondary { border-color: var(--color-secondary)!important; }
@@ -122,4 +126,5 @@ body {
 .border-color-dark { border-color: var(--color-dark)!important; }
 .border-color-white { border-color: var(--color-white)!important; }
 .border-color-transparent {border-color: var(--color-transparent); }
+.border-color-grey { border-color: var(--color-grey)!important; }
 

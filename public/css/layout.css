@@ -66,7 +66,8 @@
 .max-width { max-width: 192rem; } /* Equivalent to 1920 pixels */
 .icon-width { width: 37.5rem; }
 .searchbar-width { width: 36.5rem; }
-.dropdown-width { width: auto; }
+.searchbar-input-width { width: 100%; }
+.aside-width { width: 25rem; max-width: 100%; }
 
 
 /* Typography setting */
@@ -100,20 +101,15 @@
 .border-bottom-xs { border-bottom: var(--border-xs); }
 .border-xs { border: var(--border-xs-light); }
 .border-xs-secondary { border: var(--border-xs-secondary); }
+.border-xs-grey { border: var(--border-xs-grey); }
 .border-md { border: var(--border-md-dark); }
 .border-sm { border: var(--border-sm); }
 .border-lg { border: var(--border-lg); }
 .border-transparent { border: var(--border-transparent); }
-.line-vertical { border-left: 1px solid var(--color-secondary); height: 5.75rem; }
+.border-bottom { border-bottom: var(--border-xs-grey); }
 
-/* Border colors used for the page / !important overrides and ensures the below syntax precede any other styling in the application */
-.border-color-secondary { border-color: var(--color-secondary)!important; }
-.border-color-success { border-color: var(--color-success)!important; }
-.border-color-info { border-color: var(--color-info)!important; }
-.border-color-light { border-color: var(--color-light)!important; }
-.border-color-dark { border-color: var(--color-dark)!important; }
-.border-color-white { border-color: var(--color-white)!important; }
-
+/* Line */
+.line-vertical { border-left: 0.1rem solid var(--color-grey); height: 5.75rem; }
 
 /* Nav button settings */ 
 .dropdown { z-index: 2;  } /* Tried to use class for z-index but the sizing got wrong then */
@@ -122,15 +118,22 @@
 
 .no-list { opacity: 0; transition: all 0.4s ease; pointer-events: none; } 
 
+/* Hover effects*/
 .dropdown-btn:hover {
-  background-color: var(--color-info); 
+  background-color: var(--color-blue); 
+}
+
+aside ul a:hover {
+  color: var(--color-blue);
 }
 
 .list-item:hover { 
-  background-color: var(--color-info);
+  color: var(--color-blue);
   width: 100%;
   height: 100%;
 }
+
+
 
 .icon-badge { 
   top: -1px;
@@ -140,3 +143,5 @@
 
 /* Circle settings */
 .circle { border-radius: 100%; }
+
+
