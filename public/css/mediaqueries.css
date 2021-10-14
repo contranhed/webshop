@@ -1,10 +1,10 @@
 @media screen and (max-width: 50em) { /* 800px/16px = 50em */ 
     .phone-hidden-sm { display: none; }
+    .display-block-sm { display: block; }
 }
 
 @media screen and (max-width: 43.75em) { /* 700px/16px = 43.75em */ 
     .contact-hidden-sm { display: none; }
-    .display-block-sm { display: block; }
     .order-last { order: 1; }
     .icon-size-mq-sm { font-size: var(--display-sm); }
     .icon-badge-mq-sm { 
