@@ -22,9 +22,9 @@
           <!-- Drop-down button -->
           <div class="dropdown display-flex display-inline-block flex-row justify-content-center align-items-center text-size-lg my-2 mx-2">
               <button class="dropdown-btn btn-dark border-small-light border-xs">
-                <i class="fas fa-user text-light text-size-xxs p-1 my-2 mx-1"></i>
+                <i class="fas fa-user text-light text-size-xxs p-2 my-2 mx-1"></i>
                 <a href="#" class="text-decoration-none text-size-xs text-light"></i>Ada Lovelace</a>
-                <i class="fas fa-caret-down text-light text-size-xxs ml-1 mr-2"></i>
+                <i class="fas fa-caret-down text-light text-size-xxs ml-1 mr-4"></i>
               </button>
               <ul class="display-flex flex-column align-items-left align-content-center lh-lg bg-light text-size-xs list-style-none no-list">
                 <li class="display-flex flex-column align-items-left">
@@ -84,51 +84,90 @@
             </a>
           
           </div>
+        </nav>
 
-        </section>
-
+      </section>
+    </header>
         <!-- Utility Section -->
-        <section class="display-flex flex-row flex-grow flex-shrink flex-wrap justify-content-between align-items-center">
+        <section class="display-flex flex-row flex-grow flex-shrink flex-wrap justify-content-center align-items-center my-6 mx-6">
 
           <!-- Website name -->
-          <div class="display-flex flex-row justify-content-between align-items-center ml-6">
+          <div class="display-flex ">
             <div>
               <h6 class="text-uppercase text-secondary ls-spacing-sm">my store</h6>
             </div>
           </div>
 
           <!-- Search Bar -->
-          <div class="display-flex flex-row flex-wrap flex-grow align-items-center align-content-flex-start order-last mx-6">
-              <form class="display-flex flex-row justify-content-flex-start align-content-center align-items-center border-color-secondary border-sm flex-grow flex-shrink">
+          <div class="display-flex flex-row flex-grow flex-shrink align-items-center align-content-flex-start border-color-secondary border-xs-secondary order-last mx-4 searchbar-mt-mq">
+              <form class="display-flex flex-row justify-content-flex-start align-content-center align-items-center flex-grow flex-shrink">
                 <button type="submit" class="border-color-transparent"><i class="fas fa-search p-2"></i></button>
                 <input type="text" class="p-2 border-color-transparent" placeholder="Search products...">
               </form>
           </div>
 
           <!-- Shopping Icons -->     
-          <div class="display-flex flex-row justify-content-center align-items-center align-content-center mr-6">
+          <div class="display-flex justify-content-between align-content-center align-items-center mx-6">
 
-            <div class="display-flex flex-row">
-              <div class="mr-2">
-                Hamburger btn
-              </div>
-              <div class="mr-2">
-                <div>heart</div>
-                <div>favs</div>
-              </div>
-              <div class="mr-2">
-                <div>cart</div>
-                <div>cost</div>
-              </div>
-              <div class="class">
-                <div>receipt</div>
-                <div>cost</div>
-              </div>
+            <!-- Icon -->
+            <div class="display-flex flex-column display-none display-block-sm">
+              <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl icon-size-mq-sm">
+                <div class="display-flex flex-row align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                    <i class="fas fa-bars text-secondary"></i>
+                </div>
+                <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">Menu</div>
+              </a>
             </div>
+
+            <!-- Vertical line -->
+            <div class="line-vertical mx-4"></div>  
+            
+            <!-- Icon -->            
+            <div class="display-flex flex-column">
+              <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
+                <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                    <i class="fas fa-heart text-secondary"></i>
+                </div>
+                <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">3</span>
+                <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">Favs</div>
+              </a>
+            </div>
+
+            <!-- Vertical line -->
+            <div class="line-vertical mx-4"></div> 
+            
+            <!-- Icon -->
+            <div class="display-flex flex-column">
+              <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
+                <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                    <i class="fas fa-shopping-cart text-secondary"></i>
+                </div>
+                <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">2</span>
+                <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">$1453.5</div>
+              </a>
+            </div>
+
+            <!-- Vertical line -->
+            <div class="line-vertical mx-4"></div> 
+        
+            <!-- Icon -->
+            <div class="display-flex flex-column">
+              <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
+                <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                    <i class="fas fa-file-invoice-dollar text-secondary"></i>
+                </div>
+                <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">2</span>
+                <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">$0.00</div>
+              </a>
+            </div>
+
+            
+          
           </div> 
-        </nav>
+
+
       </section>
-      <hr class="border-small-secondary border-xs">
-    </header>
+      <hr class="border-small-secondary border-xs my-2 mx-2">
+
 </body>
 </html>

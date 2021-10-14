@@ -2,7 +2,7 @@
 :root {
     /* Colors used on the page / List of variables for reuse in the application */
     --color-secondary: #6c757d;
-    --color-success: #b5d56a;
+    --color-success: #00b300;
     --color-info: #84bed6;
     --color-light: #f8f9fa;
     --color-dark: #343a40;
@@ -47,6 +47,7 @@
     /* Borders used for the page */
     --border-xs-light: 0.1rem solid var(--color-light); /* Equivalent to 1 pixel and use variable to get the color specified above */
     --border-xs: .1rem solid var(--color-light);
+    --border-xs-secondary: .1rem solid var(--color-secondary);
     --border-sm: .2rem solid var(--color-light); /* Equivalent to 2 pixels */
     --border-md: .3rem solid var(--color-dark); /* Equivalent to 3 pixels */
     --border-lg: .4rem solid var(--color-white); /* Equivalent to 4 pixels */

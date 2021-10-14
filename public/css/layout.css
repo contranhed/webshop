@@ -94,15 +94,26 @@
 .border-small-white { border: var(--border-xs-white); }
 .border-small-light { border: var(--border-xs-light); }
 .border-small-dark { border: var(--border-xs-dark); }
-.border-small-primary { border: var(--border-xs-primary); }
+.border-small-secondary { border: var(--border-xs-secondary); }
 .border-radius { border-radius: var(--border-radius-sm); }
 .border-radius-nav { border-radius: 0rem, 0rem, .25rem, .25rem }
 .border-bottom-xs { border-bottom: var(--border-xs); }
 .border-xs { border: var(--border-xs-light); }
+.border-xs-secondary { border: var(--border-xs-secondary); }
 .border-md { border: var(--border-md-dark); }
 .border-sm { border: var(--border-sm); }
 .border-lg { border: var(--border-lg); }
 .border-transparent { border: var(--border-transparent); }
+.line-vertical { border-left: 1px solid var(--color-secondary); height: 5.75rem; }
+
+/* Border colors used for the page / !important overrides and ensures the below syntax precede any other styling in the application */
+.border-color-secondary { border-color: var(--color-secondary)!important; }
+.border-color-success { border-color: var(--color-success)!important; }
+.border-color-info { border-color: var(--color-info)!important; }
+.border-color-light { border-color: var(--color-light)!important; }
+.border-color-dark { border-color: var(--color-dark)!important; }
+.border-color-white { border-color: var(--color-white)!important; }
+
 
 /* Nav button settings */ 
 .dropdown { z-index: 2;  } /* Tried to use class for z-index but the sizing got wrong then */
@@ -121,4 +132,11 @@
   height: 100%;
 }
 
+.icon-badge { 
+  top: -1px;
+  right: -4px;
+  padding: var(--distance-1) var(--distance-3);
+}
 
+/* Circle settings */
+.circle { border-radius: 100%; }
