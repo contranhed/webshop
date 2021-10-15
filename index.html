@@ -13,15 +13,19 @@
     <script src="index.js"></script>
     <title>Web shop</title>
 </head>
-<body>
+  <body>
+
+    <!-- Page Header With Nav -->
     <header>
 
-      <!-- Top Bar -->
+      <!-- Top Bar Section -->
       <section class="display-flex flex-row flex-grow flex-shrink justify-content-between align-items-center align-content-center">
         
+        <!-- Navbar Container -->
         <nav class="display-flex flex-row justify-content-between bg-dark text-light flex-grow flex-shrink height-nav">
-          <!-- Drop-down button -->
-          <div class="dropdown display-flex display-inline-block flex-row justify-content-center align-items-center text-size-lg my-2 mx-2">
+          
+          <!-- Drop-Down Button -->
+          <div class="dropdown display-flex display-inline-block flex-row justify-content-center align-items-center text-size-lg my-2 ml-6">
               <button class="dropdown-btn btn-dark border-small-light border-xs">
                 <i class="fas fa-user text-light text-size-xxs p-2 my-2 mx-1"></i>
                 <a href="#" class="text-decoration-none text-size-xs text-light"></i>Ada Lovelace</a>
@@ -29,7 +33,7 @@
               </button>
               <ul class="display-flex flex-column align-items-left align-content-center lh-lg bg-light text-size-xs list-style-none no-list">
                 <li class="display-flex flex-column align-items-left">
-                  <a href="#" class="list-item text-decoration-none text-dark p-2">Grace Hopper</a>
+                  <a href="#" class="list-item text-decoration-none text-dark p-2 ml-2">Grace Hopper</a>
                 </li>
                 <li class="display-flex flex-column align-items-left">
                   <a href="#" class="list-item text-decoration-none text-dark p-2">Ada Lovelace</a>
@@ -40,7 +44,7 @@
               </ul>
           </div>
 
-          <!-- Contact details -->
+          <!-- Contact Details -->
           <div class="display-flex flex-row justify-content-between align-items-center align-content-center text-size-xs contact-hidden-sm">
             <div class="mr-4 phone-hidden-sm">
               <i class="fas fa-phone-alt"></i>
@@ -85,140 +89,146 @@
             </a>
           
           </div>
+        
         </nav>
 
       </section>
 
     </header>
 
-      <!-- Utility Section -->
-      <section class="display-flex flex-row flex-grow flex-shrink flex-wrap justify-content-center align-items-center my-6 mx-6">
+    <!-- Utility Section Container -->
+    <section class="display-flex flex-row flex-grow flex-shrink flex-wrap justify-content-center align-items-center my-6 mx-6">
 
-          <!-- Website name -->
-          <div class="display-flex ">
-            <div>
-              <h6 class="text-uppercase text-secondary ls-spacing-sm">my store</h6>
+      <!-- Website Name Container -->
+      <div class="display-flex">
+        <h6 class="text-uppercase text-secondary ls-spacing-sm">my store</h6>
+      </div>
+
+      <!-- Search Bar Container -->
+      <div class="display-flex flex-row flex-wrap flex-grow flex-shrink align-items-center align-content-flex-start border-color-grey border-xs-grey order-last mx-4 search-mx-mq searchbar-mt-mq">
+          <form class="display-flex flex-row justify-content-flex-start align-content-center align-items-center flex-grow flex-shrink">
+            <button type="submit" class="border-color-transparent"><i class="fas fa-search p-2"></i></button>
+            <input type="text" class="p-2 border-color-transparent searchbar-input-width" placeholder="Search products...">
+          </form>
+      </div>
+
+      <!-- Shopping Icons Container -->     
+      <div class="display-flex justify-content-between align-content-center align-items-center mx-6">
+
+        <!-- Icon -->
+        <div class="display-flex flex-column display-none display-block-sm">
+          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl icon-size-mq-sm">
+            <div class="display-flex flex-row align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                <i class="fas fa-bars text-secondary"></i>
             </div>
-          </div>
-
-          <!-- Search Bar -->
-          <div class="display-flex flex-row flex-grow flex-shrink align-items-center align-content-flex-start border-color-grey border-xs-grey order-last mx-4 searchbar-mt-mq">
-              <form class="display-flex flex-row justify-content-flex-start align-content-center align-items-center flex-grow flex-shrink">
-                <button type="submit" class="border-color-transparent"><i class="fas fa-search p-2"></i></button>
-                <input type="text" class="p-2 border-color-transparent searchbar-input-width" placeholder="Search products...">
-              </form>
-          </div>
-
-          <!-- Shopping Icons -->     
-          <div class="display-flex justify-content-between align-content-center align-items-center mx-6">
-
-            <!-- Icon -->
-            <div class="display-flex flex-column display-none display-block-sm">
-              <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl icon-size-mq-sm">
-                <div class="display-flex flex-row align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                    <i class="fas fa-bars text-secondary"></i>
-                </div>
-                <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">Menu</div>
-              </a>
-            </div>
-
-            <!-- Vertical line -->
-            <div class="line-vertical mx-4 display-none display-block-sm"></div>  
-            
-            <!-- Icon -->            
-            <div class="display-flex flex-column">
-              <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
-                <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                    <i class="fas fa-heart text-secondary"></i>
-                </div>
-                <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">3</span>
-                <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">Favs</div>
-              </a>
-            </div>
-
-            <!-- Vertical line -->
-            <div class="line-vertical mx-4"></div> 
-            
-            <!-- Icon -->
-            <div class="display-flex flex-column">
-              <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
-                <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                    <i class="fas fa-shopping-cart text-secondary"></i>
-                </div>
-                <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">2</span>
-                <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">$1453.5</div>
-              </a>
-            </div>
-
-            <!-- Vertical line -->
-            <div class="line-vertical mx-4"></div> 
-        
-            <!-- Icon -->
-            <div class="display-flex flex-column">
-              <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
-                <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                    <i class="fas fa-file-invoice-dollar text-secondary"></i>
-                </div>
-                <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">2</span>
-                <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">$0.00</div>
-              </a>
-            </div>
-
-            
-          
-          </div> 
-
-      </section>
-
-      <!-- Border across site -->
-      <hr class="border-xs-grey">
-
-      <!-- Product Section -->
-
-      <section class="display-flex flex-row max-width">
-        <div class="display-flex flex-row">
-          <aside class="display-flex flex-column aside-width mx-6 my-6">
-            <ul class="display-flex flex-column align-items-left align-content-center list-style-none border-xs-grey text-secondary text-size-xs"> 
-              <a href="#" class="text-decoration-none">
-                <li class="text-secondary border-bottom list-item"><i class="fas fa-hdd text-blue mx-4 my-6 "></i>Computers & Accessories</li>
-              </a>
-              <a href="#" class="text-decoration-none">
-                <li class="text-secondary border-bottom list-item"><i class="fas fa-desktop text-blue mx-4 my-6"></i>TV, Video & Audio</li>
-              </a>            
-              <a href="#" class="text-decoration-none">
-                <li class="text-secondary border-bottom list-item"><i class="fas fa-mobile-alt text-blue mx-4 my-6"></i>Smartphones & Tablets</li>
-              </a>            
-              <a href="#" class="text-decoration-none">
-                <li class="text-secondary border-bottom list-item"><i class="fas fa-camera-retro text-blue mx-4 my-6"></i>Photo Cameras</li>
-              </a>            
-              <a href="#" class="text-decoration-none">
-                <li class="text-secondary border-bottom list-item"><i class="fas fa-video text-blue mx-4 my-6"></i>Video Cameras</li>
-              </a>            
-              <a href="#" class="text-decoration-none">
-                <li class="text-secondary border-bottom list-item"><i class="fas fa-headphones text-blue mx-4 my-6"></i>Headphones</li>
-              </a>            
-              <a href="#" class="text-decoration-none">
-                <li class="text-secondary border-bottom list-item"><i class="fas fa-clock text-blue mx-4 my-6"></i>Wearable Electronics</li>
-              </a>            
-              <a href="#" class="text-decoration-none">
-                <li class="text-secondary border-bottom list-item"><i class="fas fa-images text-blue mx-4 my-6"></i>Printers & Ink</li>
-              </a>            
-              <a href="#" class="text-decoration-none">
-                <li class="text-secondary border-bottom list-item"><i class="fas fa-gamepad text-blue mx-4 my-6"></i>Video Games</li>
-              </a>            
-              <a href="#" class="text-decoration-none">
-                <li class="text-secondary border-bottom  list-item"><i class="fas fa-volume-down text-blue mx-4 my-6"></i>Speakers & Home Music</li>
-              </a>            
-              <a href="#" class="text-decoration-none">
-                <li class="text-secondary list-item"><i class="fas fa-server text-blue mx-4 my-6"></i>HDD / SDD Data Storage</li>
-              </a>
-            </ul>
-          </aside>
-        
+            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">Menu</div>
+          </a>
         </div>
 
-      </section>
+        <!-- Vertical Line -->
+        <div class="line-vertical mx-4 display-none display-block-sm"></div>  
+        
+        <!-- Icon -->            
+        <div class="display-flex flex-column">
+          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
+            <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                <i class="fas fa-heart text-secondary"></i>
+            </div>
+            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">3</span>
+            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">Favs</div>
+          </a>
+        </div>
+
+        <!-- Vertical Line -->
+        <div class="line-vertical mx-4"></div> 
+        
+        <!-- Icon -->
+        <div class="display-flex flex-column">
+          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
+            <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                <i class="fas fa-shopping-cart text-secondary"></i>
+            </div>
+            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">2</span>
+            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">$1453.5</div>
+          </a>
+        </div>
+
+        <!-- Vertical Line -->
+        <div class="line-vertical mx-4"></div> 
+    
+        <!-- Icon -->
+        <div class="display-flex flex-column">
+          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
+            <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                <i class="fas fa-file-invoice-dollar text-secondary"></i>
+            </div>
+            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">2</span>
+            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">$0.00</div>
+          </a>
+        </div>
+
+      </div> 
+
+    </section>
+
+    <!-- Border Across Site -->
+    <hr class="border-xs-grey">
+
+    <!-- Product Section -->
+    <section class="display-flex flex-row max-width">
+
+      <!-- Product List Container -->
+      <div class="display-flex flex-row">
+
+        <!-- Sidebar Product List Container -->
+        <aside class="display-flex flex-column aside-width mx-6 my-6">
+          <ul class="display-flex flex-column align-items-left align-content-center list-style-none border-xs-grey text-secondary text-size-xs"> 
+            <a href="#" class="text-decoration-none">
+              <li class="text-secondary border-bottom list-item"><i class="fas fa-hdd text-blue mx-4 my-6 "></i>Computers & Accessories</li>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <li class="text-secondary border-bottom list-item"><i class="fas fa-desktop text-blue mx-4 my-6"></i>TV, Video & Audio</li>
+            </a>            
+            <a href="#" class="text-decoration-none">
+              <li class="text-secondary border-bottom list-item"><i class="fas fa-mobile-alt text-blue mx-4 my-6"></i>Smartphones & Tablets</li>
+            </a>            
+            <a href="#" class="text-decoration-none">
+              <li class="text-secondary border-bottom list-item"><i class="fas fa-camera-retro text-blue mx-4 my-6"></i>Photo Cameras</li>
+            </a>            
+            <a href="#" class="text-decoration-none">
+              <li class="text-secondary border-bottom list-item"><i class="fas fa-video text-blue mx-4 my-6"></i>Video Cameras</li>
+            </a>            
+            <a href="#" class="text-decoration-none">
+              <li class="text-secondary border-bottom list-item"><i class="fas fa-headphones text-blue mx-4 my-6"></i>Headphones</li>
+            </a>            
+            <a href="#" class="text-decoration-none">
+              <li class="text-secondary border-bottom list-item"><i class="fas fa-clock text-blue mx-4 my-6"></i>Wearable Electronics</li>
+            </a>            
+            <a href="#" class="text-decoration-none">
+              <li class="text-secondary border-bottom list-item"><i class="fas fa-images text-blue mx-4 my-6"></i>Printers & Ink</li>
+            </a>            
+            <a href="#" class="text-decoration-none">
+              <li class="text-secondary border-bottom list-item"><i class="fas fa-gamepad text-blue mx-4 my-6"></i>Video Games</li>
+            </a>            
+            <a href="#" class="text-decoration-none">
+              <li class="text-secondary border-bottom  list-item"><i class="fas fa-volume-down text-blue mx-4 my-6"></i>Speakers & Home Music</li>
+            </a>            
+            <a href="#" class="text-decoration-none">
+              <li class="text-secondary list-item"><i class="fas fa-server text-blue mx-4 my-6"></i>HDD / SDD Data Storage</li>
+            </a>
+          </ul>
+        </aside>
+      
+      </div>
+
+      <!-- Product Cards Container -->
+      <div class="class">
 
 
-</body>
+
+      </div>
+
+    </section>
+    
+  </body>
 </html>
