@@ -11,7 +11,14 @@
 .flex-column { flex-direction: column; }
 .flex-wrap { flex-wrap: wrap; }
 .flex-grow { flex-grow: 1; } /* Should grow when the page is widened */
+.flex-grow-3 { flex-grow: 3; } /* Take up all the space left in the Product section */
 .flex-shrink { flex-shrink: 1; }
+
+.flex-basis-aside { flex-basis: 25rem; }
+.no-flex-shrink { flex-shrink: 0; }
+.no-flex-grow { flex-grow: 0; }
+.flex-basis { flex-basis: 100rem; } /* Tell the browser to take as much space as possible */ 
+
 
 /* Settings to align and justify the items/elements on the page */
 .justify-content-between { justify-content: space-between; }
@@ -25,4 +32,6 @@
 .align-items-left { align-items: left; }
 .align-content-flex-end { align-content: flex-end; }
 .align-self-stretch { align-self: stretch; }
+
+
 

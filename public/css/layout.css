@@ -4,12 +4,11 @@
 .lh-md { line-height: var(--line-height-md); }
 .lh-lg { line-height: var(--line-height-lg); }
 
-.height-nav { height: 5rem; }
-
 /* Position settings */
 .position-relative { position: relative !important; } 
 .position-absolute { position: absolute !important; }
 .overflow-hidden { overflow: hidden; }
+
 .centerXY { /* Used in absolute positioning to center the elements/items */
     top: 50%; 
     left: 50%;
@@ -67,8 +66,10 @@
 .icon-width { width: 37.5rem; }
 .searchbar-width { width: 36.5rem; }
 .searchbar-input-width { width: 100%; }
-.aside-width { width: 25rem; max-width: 100%; }
 
+/* Height Settings */
+.height-nav { height: 5rem; }
+.product-card-height { height: 20rem; }
 
 /* Typography setting */
 .text-decoration-none { text-decoration: none; }
@@ -90,8 +91,11 @@
 
 .ls-spacing-sm { letter-spacing: var(--distance-1); }
 .list-style-none { list-style: none; }
+.no-white-space { white-space: nowrap; }
+.text-overflow { text-overflow: ellipsis; }
+.overflow-wrap { overflow-wrap: break-word; }
 
-/* Border settings */
+/* Border Settings */
 .border-small-white { border: var(--border-xs-white); }
 .border-small-light { border: var(--border-xs-light); }
 .border-small-dark { border: var(--border-xs-dark); }
@@ -108,21 +112,12 @@
 .border-transparent { border: var(--border-transparent); }
 .border-bottom { border-bottom: var(--border-xs-grey); }
 
-/* Line */
-.line-vertical { border-left: 0.1rem solid var(--color-grey); height: 5.75rem; }
-
 /* Nav button settings */ 
-.dropdown { z-index: 2;  } /* Tried to use class for z-index but the sizing got wrong then */
-
-.dropdown button:focus + ul { opacity: 1; pointer-events: all; }
-
+.z-index { z-index: 2;  } /* Tried to use class for z-index but the sizing got wrong then */
+.z-index button:focus + ul { opacity: 1; pointer-events: all; }
 .no-list { opacity: 0; transition: all 0.4s ease; pointer-events: none; } 
 
-/* Hover effects*/
-.dropdown-btn:hover {
-  background-color: var(--color-blue); 
-}
-
+/* Hover Effects */
 aside ul a:hover {
   color: var(--color-blue);
 }
@@ -133,15 +128,14 @@ aside ul a:hover {
   height: 100%;
 }
 
-
-
+/* Figure Settings */
 .icon-badge { 
   top: -1px;
   right: -4px;
   padding: var(--distance-1) var(--distance-3);
 }
 
-/* Circle settings */
 .circle { border-radius: 100%; }
 
+.line-vertical { border-left: 0.1rem solid var(--color-grey); height: 5.75rem; }
 

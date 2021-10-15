@@ -1,6 +1,8 @@
 @media screen and (max-width: 50em) { /* 800px/16px = 50em */ 
     .phone-hidden-sm { display: none; }
     .display-block-sm { display: block; }
+    .flex-column-sm { flex-direction: column; }
+    .flex-grow-aside { flex-grow: 1 !important; }
 }
 
 @media screen and (max-width: 43.75em) { /* 700px/16px = 43.75em */ 
@@ -23,6 +25,5 @@
 }  
 
 @media screen and (max-width: 25em) { /* 400px/16px = 25em */ 
-
     .width-sm { width: 150%; }
 }  

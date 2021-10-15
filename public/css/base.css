@@ -117,6 +117,7 @@ body {
 .text-dark { color: var(--color-dark); }
 .text-white { color: var(--color-white); }
 .text-blue { color: var(--color-blue); }
+.text-grey { color: var(--color-grey); }
 
 /* Border colors used for the page / !important overrides and ensures the below syntax precede any other styling in the application */
 .border-color-secondary { border-color: var(--color-secondary)!important; }

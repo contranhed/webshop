@@ -25,8 +25,8 @@
         <nav class="display-flex flex-row justify-content-between bg-dark text-light flex-grow flex-shrink height-nav">
           
           <!-- Drop-Down Button -->
-          <div class="dropdown display-flex display-inline-block flex-row justify-content-center align-items-center text-size-lg my-2 ml-6">
-              <button class="dropdown-btn btn-dark border-small-light border-xs">
+          <div class="display-flex display-inline-block flex-row justify-content-center align-items-center z-index text-size-lg my-2 ml-6">
+              <button class="btn-dark border-small-light border-xs">
                 <i class="fas fa-user text-light text-size-xxs p-2 my-2 mx-1"></i>
                 <a href="#" class="text-decoration-none text-size-xs text-light"></i>Ada Lovelace</a>
                 <i class="fas fa-caret-down text-light text-size-xxs ml-1 mr-4"></i>
@@ -97,7 +97,7 @@
     </header>
 
     <!-- Utility Section Container -->
-    <section class="display-flex flex-row flex-grow flex-shrink flex-wrap justify-content-center align-items-center my-6 mx-6">
+    <section class="display-flex flex-row flex-grow flex-shrink flex-wrap justify-content-center align-items-center m-6">
 
       <!-- Website Name Container -->
       <div class="display-flex">
@@ -175,13 +175,13 @@
     <hr class="border-xs-grey">
 
     <!-- Product Section -->
-    <section class="display-flex flex-row max-width">
+    <section class="display-flex flex-row max-width flex-column-sm">
 
       <!-- Product List Container -->
-      <div class="display-flex flex-row">
+      <div class="display-flex flex-row flex-grow">
 
         <!-- Sidebar Product List Container -->
-        <aside class="display-flex flex-column aside-width mx-6 my-6">
+        <aside class="display-flex flex-column no-flex-shrink flex-basis-aside flex-grow-aside m-6">
           <ul class="display-flex flex-column align-items-left align-content-center list-style-none border-xs-grey text-secondary text-size-xs"> 
             <a href="#" class="text-decoration-none">
               <li class="text-secondary border-bottom list-item"><i class="fas fa-hdd text-blue mx-4 my-6 "></i>Computers & Accessories</li>
@@ -219,13 +219,34 @@
           </ul>
         </aside>
       
+      <!-- End of Product List Container -->  
       </div>
 
       <!-- Product Cards Container -->
-      <div class="class">
+      <div class="display-flex flex-row flex-wrap overflow-hidden flex-grow">
 
+        <!-- Product Card -->
+        <div class="display-flex flex-xs-column position-relative no-flex-grow flex-shrink flex-basis m-6 border-xs-grey">
+          <img src="./public/images/products/AsusLaptop.jpg" class="img-lg-width img-xs-width" alt="Image of a laptop">
+          <div class="p-6 display-flex flex-column flex-grow">
+              <h2 class="text-size-lg text-secondary">Surface Book 14 in.</h2>
+              <div class="text-size-xs text-secondary">Computers & Accessories</div>
+              <div class="text-size-sm text-secondary my-4">$1253.5</div>
+              <div class="producttext-width text-size-xs text-secondary">The Surface Book is a 2-in-1 PC designed ... 
 
-
+              </div>
+              <!-- <div><i class="fas fa-house-user mr-4 mb-4"></i>Dep: Gryffindor</div> -->
+              <!-- <div><i class="far fa-clock mr-4 mb-10"></i>9am - 10am</div> -->
+          </div>
+          <div class="display-flex flex-column justify-content-center align-items-center position-absolute text-bold text-size-xxs lh-md">
+              <span class="p-1 mx-1 bg-success text-light">10% off</span>
+          </div>
+          <div class="display-flex flex-column justify-content-center align-items-center position-absolute text-bold text-size-xxs lh-md">
+            <span class="p-1 mx-1 bg-success text-light"><i class="far fa-heart"></i></span>
+          </div>
+        </div>
+      
+      <!-- End of Product Card Container -->
       </div>
 
     </section>
