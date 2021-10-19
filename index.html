@@ -22,13 +22,13 @@
       <section class="display-flex flex-row flex-grow flex-shrink justify-content-between align-items-center align-content-center">
         
         <!-- Navbar Container -->
-        <nav class="display-flex flex-row justify-content-between bg-dark text-light flex-grow flex-shrink height-nav">
+        <nav class="display-flex flex-row flex-grow flex-shrink justify-content-between height-nav bg-dark text-light">
           
           <!-- Drop-Down Button -->
           <div class="display-flex display-inline-block flex-row justify-content-center align-items-center z-index text-size-lg my-2 ml-6">
               <button class="btn-dark border-small-light border-xs">
-                <i class="fas fa-user text-light text-size-xxs p-2 my-2 mx-1"></i>
-                <a href="#" class="text-decoration-none text-size-xs text-light"></i>Ada Lovelace</a>
+                <i class="fas fa-user text-light text-size-xxs align-items-center p-2 my-2 ml-2 "></i>
+                <a href="#" class="text-decoration-none text-size-xs text-light hide-name-sm"></i>Ada Lovelace</a>
                 <i class="fas fa-caret-down text-light text-size-xxs ml-1 mr-4"></i>
               </button>
               <ul class="display-flex flex-column align-items-left align-content-center lh-lg bg-light text-size-xs list-style-none no-list">
@@ -100,28 +100,30 @@
     <section class="display-flex flex-row flex-grow flex-shrink flex-wrap justify-content-center align-items-center m-6">
 
       <!-- Website Name Container -->
-      <div class="display-flex">
-        <h6 class="text-uppercase text-secondary ls-spacing-sm">my store</h6>
+      <div class="display-flex width-sm justify-content-center-sm mb-storename-sm">
+        <h5 class="text-uppercase text-secondary ls-spacing-sm">my store</h5>
       </div>
 
       <!-- Search Bar Container -->
-      <div class="display-flex flex-row flex-wrap flex-grow flex-shrink align-items-center align-content-flex-start border-color-grey border-xs-grey order-last mx-4 search-mx-mq searchbar-mt-mq">
-          <form class="display-flex flex-row justify-content-flex-start align-content-center align-items-center flex-grow flex-shrink">
-            <button type="submit" class="border-color-transparent"><i class="fas fa-search p-2"></i></button>
+      <div class="display-flex flex-wrap flex-grow flex-shrink align-items-center align-content-flex-start border-color-grey border-xs-grey mx-4 order-last-sm search-mx-sm">
+          <form class="display-flex flex-row flex-grow flex-shrink justify-content-flex-start align-content-center align-items-center searchbar-min-width-sm">
+            <button type="submit" class="border-color-transparent">
+              <a href=""><i class="fas fa-search p-2"></i></a>
+            </button>
             <input type="text" class="p-2 border-color-transparent searchbar-input-width" placeholder="Search products...">
           </form>
       </div>
 
       <!-- Shopping Icons Container -->     
-      <div class="display-flex justify-content-between align-content-center align-items-center mx-6">
+      <div class="display-flex flex-row justify-content-between align-content-center align-items-center mx-6">
 
         <!-- Icon -->
         <div class="display-flex flex-column display-none display-block-sm">
-          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl icon-size-mq-sm">
+          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl ">
             <div class="display-flex flex-row align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
                 <i class="fas fa-bars text-secondary"></i>
             </div>
-            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">Menu</div>
+            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">Menu</div>
           </a>
         </div>
 
@@ -130,12 +132,12 @@
         
         <!-- Icon -->            
         <div class="display-flex flex-column">
-          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
+          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
             <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
                 <i class="fas fa-heart text-secondary"></i>
             </div>
-            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">3</span>
-            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">Favs</div>
+            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">3</span>
+            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary ">Favs</div>
           </a>
         </div>
 
@@ -144,12 +146,12 @@
         
         <!-- Icon -->
         <div class="display-flex flex-column">
-          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
+          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
             <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
                 <i class="fas fa-shopping-cart text-secondary"></i>
             </div>
-            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">2</span>
-            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">$1453.5</div>
+            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">2</span>
+            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">$1453.5</div>
           </a>
         </div>
 
@@ -158,12 +160,12 @@
     
         <!-- Icon -->
         <div class="display-flex flex-column">
-          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative icon-size-mq-sm">
+          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
             <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
                 <i class="fas fa-file-invoice-dollar text-secondary"></i>
             </div>
-            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xxs icon-badge-mq-sm">2</span>
-            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary text-size-mq-sm">$0.00</div>
+            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">2</span>
+            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">$0.00</div>
           </a>
         </div>
 
@@ -172,19 +174,16 @@
     </section>
 
     <!-- Border Across Site -->
-    <hr class="border-xs-grey">
+    <hr class="border-xs-grey bar-hidden-sm">
 
     <!-- Product Section -->
-    <section class="display-flex flex-row max-width flex-column-sm">
+    <section class="display-flex flex-row max-width flex-column-sm ">
 
-      <!-- Product List Container -->
-      <div class="display-flex flex-row flex-grow">
-
-        <!-- Sidebar Product List Container -->
-        <aside class="display-flex flex-column no-flex-shrink flex-basis-aside flex-grow-aside m-6">
-          <ul class="display-flex flex-column align-items-left align-content-center list-style-none border-xs-grey text-secondary text-size-xs"> 
+      <!-- Sidebar Product List Container -->
+      <aside class="display-flex flex-column no-flex-shrink aside-width flex-grow-aside-sm m-6 width-sm ml-0-sm mt-0-sm">
+          <ul class="display-flex flex-column align-items-left align-content-center list-style-none border-xs-grey text-secondary text-size-sm text-bold"> 
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom list-item"><i class="fas fa-hdd text-blue mx-4 my-6 "></i>Computers & Accessories</li>
+              <li class="text-secondary border-bottom list-item"><i class="fas fa-hdd text-blue mx-4 my-6"></i>Computers & Accessories</li>
             </a>
             <a href="#" class="text-decoration-none">
               <li class="text-secondary border-bottom list-item"><i class="fas fa-desktop text-blue mx-4 my-6"></i>TV, Video & Audio</li>
@@ -217,35 +216,44 @@
               <li class="text-secondary list-item"><i class="fas fa-server text-blue mx-4 my-6"></i>HDD / SDD Data Storage</li>
             </a>
           </ul>
-        </aside>
+      </aside>
       
-      <!-- End of Product List Container -->  
-      </div>
-
       <!-- Product Cards Container -->
-      <div class="display-flex flex-row flex-wrap overflow-hidden flex-grow">
+      <div class="display-flex flex-row flex-wrap align-content-start overflow-hidden card-flex-column-sm no-margin-top-sm">
 
         <!-- Product Card -->
-        <div class="display-flex flex-xs-column position-relative no-flex-grow flex-shrink flex-basis m-6 border-xs-grey">
-          <img src="./public/images/products/AsusLaptop.jpg" class="img-lg-width img-xs-width" alt="Image of a laptop">
-          <div class="p-6 display-flex flex-column flex-grow">
+        <div class="display-flex position-relative product-card-height product-card-width border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-sm mt-0-sm">
+          <!-- Image of the product card -->
+          <div class="no-flex-shrink img-lg-width img-lg-height ">
+            <img src="./public/images/products/AsusLaptop.jpg" class="justify-content-center align-items-center align-content-center img-max-width img-xs-width" alt="Image of a laptop">
+          </div>
+          
+          <div class="p-6 display-flex flex-column position-relative ">
               <h2 class="text-size-lg text-secondary">Surface Book 14 in.</h2>
               <div class="text-size-xs text-secondary">Computers & Accessories</div>
               <div class="text-size-sm text-secondary my-4">$1253.5</div>
-              <div class="producttext-width text-size-xs text-secondary">The Surface Book is a 2-in-1 PC designed ... 
-
+              <div class="text-size-xs text-secondary">
+                <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">Surface Book is the first Surface-family 2-in-1 to be shipped with a keyboard. Contrary to a Type Cover optional keyboard accessory of other Surface tablets, Surface Book's keyboard is a thick and sturdy part, capable of folding back behind the display. </p>
               </div>
-              <!-- <div><i class="fas fa-house-user mr-4 mb-4"></i>Dep: Gryffindor</div> -->
-              <!-- <div><i class="far fa-clock mr-4 mb-10"></i>9am - 10am</div> -->
+
+              <!-- Icon Cart -->
+              <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+              </div>
+                <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
+              </div>
           </div>
-          <div class="display-flex flex-column justify-content-center align-items-center position-absolute text-bold text-size-xxs lh-md">
-              <span class="p-1 mx-1 bg-success text-light">10% off</span>
+          
+          <div class="position-absolute bg-success text-light text-bold text-size-xxs t-0 l-0">
+              <span class="p-2 mx-3">10% off</span>
           </div>
-          <div class="display-flex flex-column justify-content-center align-items-center position-absolute text-bold text-size-xxs lh-md">
-            <span class="p-1 mx-1 bg-success text-light"><i class="far fa-heart"></i></span>
+
+          <!-- Icon Heart -->
+          <div class="position-absolute icon-heart text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
+              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
           </div>
-        </div>
-      
       <!-- End of Product Card Container -->
       </div>
 

@@ -46,6 +46,10 @@
     --distance-15: 3.75rem;
     --distance-16: 4rem;
 
+
+    --distance-18: 4.5rem;
+    --distance-20: 5rem;
+
     /* Borders used for the page */
     --border-xs-light: 0.1rem solid var(--color-light); /* Equivalent to 1 pixel and use variable to get the color specified above */
     --border-xs: .1rem solid var(--color-light);

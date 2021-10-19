@@ -41,6 +41,8 @@
 .mt-15, .my-15 { margin-top: var(--distance-15); } /* Equivalent to 4rem */
 .mb-15, .my-15 { margin-bottom: var(--distance-15); }
 
+.mb-20, .my-20 { margin-bottom: var(--distance-20); }
+
 .mr-1, .mx-1 { margin-right: var(--distance-1); } /* Equivalent to 1rem */
 .ml-1, .mx-1 { margin-left: var(--distance-1); }
 .mr-2, .mx-2 { margin-right: var(--distance-2); } /* Equivalent to 1rem */
@@ -49,6 +51,14 @@
 .ml-4, .mx-4 { margin-left: var(--distance-4); }
 .mr-6, .mx-6 { margin-right: var(--distance-6); } /* Equivalent to 1.5rem */
 .ml-6, .mx-6 { margin-left: var(--distance-6); }
+
+.mr-12, .mx-12 { margin-bottom: var(--distance-12); }
+.mr-20, .mx-20 { margin-bottom: var(--distance-20); }
+
+.r-0 { right: var(--distance-0); }
+.l-0 { left: var(--distance-0); }
+.t-0 { top: var(--distance-0); }
+.b-0 { bottom: var(--distance-0);}
 
 /* Padding settings. Reuse of variables for distance in base.css file */
 .p-1 { padding: var(--distance-1); } 
@@ -66,10 +76,14 @@
 .icon-width { width: 37.5rem; }
 .searchbar-width { width: 36.5rem; }
 .searchbar-input-width { width: 100%; }
+.aside-width { width: 25rem; }
+.product-card-width { flex-basis: 30%; }
+
 
 /* Height Settings */
 .height-nav { height: 5rem; }
-.product-card-height { height: 20rem; }
+.product-card-height { height: 25rem; }
+.product-card-width { max-width: 150rem;}
 
 /* Typography setting */
 .text-decoration-none { text-decoration: none; }
@@ -93,7 +107,7 @@
 .list-style-none { list-style: none; }
 .no-white-space { white-space: nowrap; }
 .text-overflow { text-overflow: ellipsis; }
-.overflow-wrap { overflow-wrap: break-word; }
+.break-word-wrap { overflow-wrap: break-word; }
 
 /* Border Settings */
 .border-small-white { border: var(--border-xs-white); }
@@ -128,14 +142,26 @@ aside ul a:hover {
   height: 100%;
 }
 
+div span a:hover {
+  color: var(--color-blue);
+}
+
 /* Figure Settings */
 .icon-badge { 
   top: -1px;
-  right: -4px;
-  padding: var(--distance-1) var(--distance-3);
+  right: -6px;
+  padding: var(--distance-0) var(--distance-3);
 }
 
 .circle { border-radius: 100%; }
 
 .line-vertical { border-left: 0.1rem solid var(--color-grey); height: 5.75rem; }
 
+/* Limit content */
+.webkit-line-clamp { -webkit-line-clamp: 3; }
+.webkit-box-orient { -webkit-box-orient: vertical; }
+
+/* Image Settings */
+.img-lg-width { max-width: 30%; }
+.img-lg-height { max-height: 30%; }
+.img-max-width { max-width: 100%; }
