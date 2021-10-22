@@ -13,14 +13,14 @@
     <script src="index.js"></script>
     <title>Web shop</title>
 </head>
+
   <body>
 
-    <!-- Page Header With Nav -->
-    <header>
+    <!-- Header -->
+    <header class="position-fixed-sm">
 
       <!-- Top Bar Section -->
-      <section class="display-flex flex-row flex-grow flex-shrink justify-content-between align-items-center align-content-center">
-        
+      <section class=" flex-row flex-grow flex-shrink justify-content-between align-items-center align-content-center">
         <!-- Navbar Container -->
         <nav class="display-flex flex-row flex-grow flex-shrink justify-content-between height-nav bg-dark text-light">
           
@@ -33,13 +33,13 @@
               </button>
               <ul class="display-flex flex-column align-items-left align-content-center lh-lg bg-light text-size-xs list-style-none no-list">
                 <li class="display-flex flex-column align-items-left">
-                  <a href="#" class="list-item text-decoration-none text-dark p-2 ml-2">Grace Hopper</a>
+                  <a href="#" class="list-item text-decoration-none text-dark ml-2">Grace Hopper</a>
                 </li>
                 <li class="display-flex flex-column align-items-left">
-                  <a href="#" class="list-item text-decoration-none text-dark p-2">Ada Lovelace</a>
+                  <a href="#" class="list-item text-decoration-none text-dark ml-2">Ada Lovelace</a>
                 </li>
                 <li class="display-flex flex-column align-items-left">
-                  <a href="#" class="list-item text-decoration-none text-dark p-2">Margaret Hamilton</a>
+                  <a href="#" class="list-item text-decoration-none text-dark ml-2">Margaret Hamilton</a>
                 </li>
               </ul>
           </div>
@@ -89,101 +89,98 @@
             </a>
           
           </div>
-        
         </nav>
+      </section>
+
+      <!-- Utility Section Container -->
+      <section class=" display-flex flex-row flex-grow flex-shrink flex-wrap bg-white justify-content-center align-items-center p-6 border-bottom-sm">
+        <!-- Website Name Container -->
+        <div class="display-flex width-sm bg-white justify-content-center-sm mb-storename-sm">
+          <h5 class="text-uppercase text-size-sm text-secondary mx-2 ls-spacing-sm">my store</h5>
+        </div>
+
+        <!-- Search Bar Container -->
+        <div class="display-flex flex-wrap flex-grow flex-shrink align-items-center align-content-flex-start mx-4 order-last-sm search-mx-sm search-mt-sm">
+            <form class="display-flex flex-row flex-grow flex-shrink justify-content-flex-start align-content-center align-items-center searchbar-min-width-sm">
+              <button type="submit" class="border-color-transparent">
+                <a href=""><i class="fas fa-search text-secondary p-4"></i></a>
+              </button>
+              <input type="text" class="p-4 border-color-transparent searchbar-input-width border-xs-grey" placeholder="Search products...">
+            </form>
+        </div>
+
+        <!-- Shopping Icons Container -->     
+        <div class="display-flex flex-row justify-content-between align-content-center align-items-center mx-6">
+
+          <!-- Icon -->
+          <div class="display-flex flex-column display-none display-block-sm">
+            <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl ">
+              <div class="display-flex flex-row align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                  <i class="fas fa-bars text-secondary"></i>
+              </div>
+              <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">Menu</div>
+            </a>
+          </div>
+
+          <!-- Vertical Line -->
+          <div class="line-vertical mx-4 display-none display-block-sm"></div>  
+          
+          <!-- Icon -->            
+          <div class="display-flex flex-column">
+            <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
+              <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                  <i class="fas fa-heart text-secondary"></i>
+              </div>
+              <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">3</span>
+              <div class="display-flex flex-column text-size-xs text-uppercase text-secondary ">Favs</div>
+            </a>
+          </div>
+
+          <!-- Vertical Line -->
+          <div class="line-vertical mx-4"></div> 
+          
+          <!-- Icon -->
+          <div class="display-flex flex-column">
+            <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
+              <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                  <i class="fas fa-shopping-cart text-secondary"></i>
+              </div>
+              <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">2</span>
+              <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">$1453.5</div>
+            </a>
+          </div>
+
+          <!-- Vertical Line -->
+          <div class="line-vertical mx-4"></div> 
+      
+          <!-- Icon -->
+          <div class="display-flex flex-column">
+            <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
+              <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
+                  <i class="fas fa-file-invoice-dollar text-secondary"></i>
+              </div>
+              <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">0</span>
+              <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">$0.00</div>
+            </a>
+          </div>
+
+        </div> 
 
       </section>
 
     </header>
 
-    <!-- Utility Section Container -->
-    <section class="display-flex flex-row flex-grow flex-shrink flex-wrap justify-content-center align-items-center m-6">
-
-      <!-- Website Name Container -->
-      <div class="display-flex width-sm justify-content-center-sm mb-storename-sm">
-        <h5 class="text-uppercase text-secondary ls-spacing-sm">my store</h5>
-      </div>
-
-      <!-- Search Bar Container -->
-      <div class="display-flex flex-wrap flex-grow flex-shrink align-items-center align-content-flex-start border-color-grey border-xs-grey mx-4 order-last-sm search-mx-sm">
-          <form class="display-flex flex-row flex-grow flex-shrink justify-content-flex-start align-content-center align-items-center searchbar-min-width-sm">
-            <button type="submit" class="border-color-transparent">
-              <a href=""><i class="fas fa-search p-2"></i></a>
-            </button>
-            <input type="text" class="p-2 border-color-transparent searchbar-input-width" placeholder="Search products...">
-          </form>
-      </div>
-
-      <!-- Shopping Icons Container -->     
-      <div class="display-flex flex-row justify-content-between align-content-center align-items-center mx-6">
-
-        <!-- Icon -->
-        <div class="display-flex flex-column display-none display-block-sm">
-          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl ">
-            <div class="display-flex flex-row align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                <i class="fas fa-bars text-secondary"></i>
-            </div>
-            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">Menu</div>
-          </a>
-        </div>
-
-        <!-- Vertical Line -->
-        <div class="line-vertical mx-4 display-none display-block-sm"></div>  
-        
-        <!-- Icon -->            
-        <div class="display-flex flex-column">
-          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
-            <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                <i class="fas fa-heart text-secondary"></i>
-            </div>
-            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">3</span>
-            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary ">Favs</div>
-          </a>
-        </div>
-
-        <!-- Vertical Line -->
-        <div class="line-vertical mx-4"></div> 
-        
-        <!-- Icon -->
-        <div class="display-flex flex-column">
-          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
-            <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                <i class="fas fa-shopping-cart text-secondary"></i>
-            </div>
-            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">2</span>
-            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">$1453.5</div>
-          </a>
-        </div>
-
-        <!-- Vertical Line -->
-        <div class="line-vertical mx-4"></div> 
-    
-        <!-- Icon -->
-        <div class="display-flex flex-column">
-          <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
-            <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                <i class="fas fa-file-invoice-dollar text-secondary"></i>
-            </div>
-            <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">2</span>
-            <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">$0.00</div>
-          </a>
-        </div>
-
-      </div> 
-
-    </section>
-
-    <!-- Border Across Site -->
-    <hr class="border-xs-grey bar-hidden-sm">
+    <!-- Border Across Site
+    <hr class="border-xs-grey bar-hidden-sm"> -->
 
     <!-- Product Section -->
-    <section class="display-flex flex-row max-width flex-column-sm ">
+    <section class="display-flex flex-row max-width flex-column-sm margin-top-sm">
 
       <!-- Sidebar Product List Container -->
-      <aside class="display-flex flex-column no-flex-shrink aside-width flex-grow-aside-sm m-6 width-sm ml-0-sm mt-0-sm">
-          <ul class="display-flex flex-column align-items-left align-content-center list-style-none border-xs-grey text-secondary text-size-sm text-bold"> 
+      <aside class="display-flex flex-column no-flex-shrink aside-width flex-grow-aside-sm m-6 width-sm ml-0-sm mr-0-sm mt-0-sm">
+          <ul class="display-flex flex-column align-items-left align-content-center list-style-none border-xs-grey text-secondary text-size-sm text-bold "> 
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom list-item"><i class="fas fa-hdd text-blue mx-4 my-6"></i>Computers & Accessories</li>
+              <li class="text-secondary border-bottom list-item"><i class="fas fa-hdd text-blue mx-4 my-6 mr-4-sm"></i>Computers & Accessories</li>
             </a>
             <a href="#" class="text-decoration-none">
               <li class="text-secondary border-bottom list-item"><i class="fas fa-desktop text-blue mx-4 my-6"></i>TV, Video & Audio</li>
@@ -222,18 +219,89 @@
       <div class="display-flex flex-row flex-wrap align-content-start overflow-hidden card-flex-column-sm no-margin-top-sm">
 
         <!-- Product Card -->
-        <div class="display-flex position-relative product-card-height product-card-width border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-sm mt-0-sm">
+        <div class=" product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm ">
           <!-- Image of the product card -->
-          <div class="no-flex-shrink img-lg-width img-lg-height ">
-            <img src="./public/images/products/AsusLaptop.jpg" class="justify-content-center align-items-center align-content-center img-max-width img-xs-width" alt="Image of a laptop">
+          <div class="no-flex-shrink img-size bg-pink">
+            <!-- Free image from Unsplash site -->            
+            <img src="./public/images/products/camera.jpg" class="mt-12 justify-content-center align-items-center align-content-center img-max-width img-xs-width img-object-fit-sd" alt="Image of a laptop">
           </div>
           
           <div class="p-6 display-flex flex-column position-relative ">
-              <h2 class="text-size-lg text-secondary">Surface Book 14 in.</h2>
-              <div class="text-size-xs text-secondary">Computers & Accessories</div>
-              <div class="text-size-sm text-secondary my-4">$1253.5</div>
+              <h2 class="text-size-lg text-secondary">Mini Camera</h2>
+              <div class="text-size-xs text-secondary">Photo Cameras</div>
+              <div class="text-size-sm text-secondary my-4">$56</div>
               <div class="text-size-xs text-secondary">
-                <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">Surface Book is the first Surface-family 2-in-1 to be shipped with a keyboard. Contrary to a Type Cover optional keyboard accessory of other Surface tablets, Surface Book's keyboard is a thick and sturdy part, capable of folding back behind the display. </p>
+                <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">Cute pocket camera that instantly gives the retro feel. Take amazing pictures and upload to your instagram with one button click </p>
+              </div>
+
+              <!-- Icon Cart -->
+              <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
+                <a href="#" class="icon-visit"><i class="fas fa-cart-plus text-size-lg text-secondary"></i></a>
+              </div>
+                <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                <a href="#" class="text-decoration-none text-secondary">4.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
+              </div>
+          </div>
+          
+          <!-- Icon Heart -->
+          <div class="position-absolute text-secondary text-size-xxs t-0 r-0 mt-6 mr-6 text-decoration-none">
+              <a href="#"><i class="far fa-heart text-size-lg"></i></a>
+          </div>
+
+        </div>
+
+        <!-- Product Card -->
+        <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
+          <!-- Image of the product card -->
+          <div class="no-flex-shrink img-size bg-purple">
+            <!-- Free image from Unsplash site -->            
+            <img src="./public/images/products/marshalls.jpg" class="mt-12 justify-content-center align-items-center align-content-center img-max-width img-xs-width" alt="Image of a laptop">
+          </div>
+
+
+          <div class="p-6 display-flex flex-column position-relative ">
+              <h2 class="text-size-lg text-secondary">Marchies</h2>
+              <div class="text-size-xs text-secondary">Headphones</div>
+              <div class="text-size-sm text-secondary my-4">$30</div>
+              <div class="text-size-xs text-secondary">
+                <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">With 60+ solid hours of wireless playtime, you get this top-of-the-line wireless headphones that provides ergonomic design. With more than three full days of power, you can stop worrying about your headphones dying on you when you need them. Custom-tuned dynamic drivers deliver roaring bass, smooth mids and brilliant treble for a rich, unrivalled sound that you’ll never want to turn off.</p>
+              </div>
+
+              <!-- Icon Cart -->
+              <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
+                <a href="#" class="autofill"><i class="fas fa-cart-plus text-size-lg"></i></a>
+              </div>
+                <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
+              </div>
+          </div>      
+
+          <!-- Icon Heart -->
+          <div class="position-absolute icon-heart text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
+              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          </div>
+
+          <div class="position-absolute bg-success text-light text-size-xxs t-0 l-0 p-1">
+            <span class="mx-2">10% off</span>
+          </div>
+        </div>
+
+        <!-- Product Card -->
+        <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
+          <!-- Image of the product card -->
+          <div class="no-flex-shrink img-size">
+            <!-- Free image from Unsplash site -->
+            <img src="./public/images/products/mobilephone.jpg" class="mt-12 justify-content-center align-items-center align-content-center img-max-width img-xs-width" alt="Image of a laptop">
+          </div>
+          
+          <div class="p-6 display-flex flex-column position-relative ">
+              <h2 class="text-size-lg text-secondary">Phoney 3310</h2>
+              <div class="text-size-xs text-secondary">Smartphones & Tablets</div>
+              <div class="text-size-sm text-secondary my-4">$725</div>
+              <div class="text-size-xs text-secondary">
+                <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">The Phoney has a user interface built around a multi-touch screen. It connects to cellular networks or Wi-Fi, and can make calls, browse the web, take pictures, play music and send and receive emails and text messages. </p>
               </div>
 
               <!-- Icon Cart -->
@@ -246,14 +314,231 @@
               </div>
           </div>
           
-          <div class="position-absolute bg-success text-light text-bold text-size-xxs t-0 l-0">
-              <span class="p-2 mx-3">10% off</span>
+          <div class="position-absolute bg-success text-light text-bold text-size-xxs t-0 l-0 p-1">
+              <span class="mx-2">25% off</span>
           </div>
 
           <!-- Icon Heart -->
           <div class="position-absolute icon-heart text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
               <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
           </div>
+        </div>    
+
+        <!-- Product Card -->
+        <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
+          <!-- Image of the product card -->
+          <div class="no-flex-shrink img-size bg-black">
+            <!-- Free image from Unsplash site -->
+            <img src="./public/images/products/blackheadphones.jpg" class="mt-15 display-flex align-content-center img-max-width img-xs-width" alt="Image of black headphones">
+          </div>
+          
+          <div class="position-absolute icon-large bg-orange text-light text-bold text-size-xxs circle border-small-light uppercase mx-3 my-3">
+            NEW!
+          </div>
+
+          <div class="p-6 display-flex flex-column position-relative ">
+              <h2 class="text-size-lg text-secondary">Cooli 2.0</h2>
+              <div class="text-size-xs text-secondary">Headphones</div>
+              <div class="text-size-sm text-secondary my-4">$40</div>
+              <div class="text-size-xs text-secondary">
+                <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">Listen to your music with noice cancelling function and forget your surrounds. No chords to consider, just chorus.</p>
+              </div>
+
+              <!-- Icon Cart -->
+              <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+              </div>
+                <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
+              </div>
+            </div>
+          
+          <!-- Icon Heart -->
+          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
+              <a href="#"><i class="far fa-heart text-size-lg"></i></a>
+          </div>
+        </div>        
+        
+        <!-- Product Card -->
+        <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
+          <!-- Image of the product card -->
+          <div class="no-flex-shrink img-size bg-lightgrey">
+            <!-- Free image from Unsplash site -->            
+            <img src="./public/images/products/smartwatch.jpg" class="mt-8 justify-content-center align-items-center align-content-center img-max-width img-xs-width" alt="Image of a laptop">
+          </div>
+          
+          <div class="p-6 display-flex flex-column position-relative ">
+              <h2 class="text-size-lg text-secondary">WatchIT</h2>
+              <div class="text-size-xs text-secondary">Wearable Electronics</div>
+              <div class="text-size-sm text-secondary my-4">$249</div>
+              <div class="text-size-xs text-secondary">
+                <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">This small device meets your need of a wearable computer in the form of a watch; modern smartwatches provide a local touchscreen interface for daily use.</p>
+              </div>
+
+              <!-- Icon Cart -->
+              <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+              </div>
+                <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
+              </div>
+          </div>
+          
+          <!-- Icon Heart -->
+          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
+              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          </div>
+        </div>   
+        
+        <!-- Product Card -->
+        <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
+          <!-- Image of the product card -->
+          <div class="no-flex-shrink img-size bg-black">
+            <!-- Free image from Unsplash site -->            
+            <img src="./public/images/products/switch.jpg" class="mt-20 justify-content-center align-items-center img-max-width img-xs-width" alt="Image of a laptop">
+          </div>
+          
+                    
+          <div class="position-absolute icon-large bg-orange text-light text-bold text-size-xxs circle border-small-light uppercase mx-3 my-3">
+            NEW!
+          </div>
+
+          <div class="p-6 display-flex flex-column position-relative ">
+              <h2 class="text-size-lg text-secondary">Switches 3.1</h2>
+              <div class="text-size-xs text-secondary">Video Games</div>
+              <div class="text-size-sm text-secondary my-4">$450</div>
+              <div class="text-size-xs text-secondary">
+                <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">This console makes it possible to hit a game whenever, wherever. It is a tablet that can be docked for use as a home console or used as a portable device, making it a hybrid console.</p>
+              </div>
+
+              <!-- Icon Cart -->
+              <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+              </div>
+                <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
+              </div>
+          </div>        
+
+          <!-- Icon Heart -->
+          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
+              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          </div>
+        </div>   
+ 
+        <!-- Product Card -->
+        <div class=" product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
+          <!-- Image of the product card -->
+          <div class="no-flex-shrink img-size bg-turquoise">
+            <!-- Free image from Unsplash site -->            
+            <img src="./public/images/products/videocamera.jpg" class="mt-15 justify-content-center align-items-center img-max-width img-xs-width" alt="Image of a laptop">
+          </div>
+
+          <div class="position-absolute icon-large bg-orange text-light text-bold text-size-xxs circle border-small-light uppercase mx-3 my-3">
+            NEW!
+          </div>
+          
+          <div class="p-6 display-flex flex-column position-relative ">
+              <h2 class="text-size-lg text-secondary">Pro Camera 2021</h2>
+              <div class="text-size-xs text-secondary">Video Cameras</div>
+              <div class="text-size-sm text-secondary my-4">$6000</div>
+              <div class="text-size-xs text-secondary">
+                <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">This is THE camera that turns any amateur into a pro filmer. Light-sensitive and light-weight because of its smart use of plastic.</p>
+              </div>
+
+              <!-- Icon Cart -->
+              <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+              </div>
+                <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
+              </div>
+          </div>      
+
+          <!-- Icon Heart -->
+          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
+              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          </div>
+        </div>   
+        
+        <!-- Product Card -->
+        <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
+          <!-- Image of the product card -->
+          <div class="no-flex-shrink img-size">
+            <!-- Free image from Unsplash site -->            
+            <img src="./public/images/products/speakers.jpg" class="mt-20 justify-content-center align-items-center img-max-width img-xs-width" alt="Image of a laptop">
+          </div>
+
+          
+          
+          <div class="p-6 display-flex flex-column position-relative ">
+              <h2 class="text-size-lg text-secondary">Retro Speakers</h2>
+              <div class="text-size-xs text-secondary">Speakers & Home Music</div>
+              <div class="text-size-sm text-secondary my-4">$99</div>
+              <div class="text-size-xs text-secondary">
+                <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">Get the cinema surrounding sounds in a mini size version that easily fits into your home decor. Available in three colors and guaranteed to meet all your needs.</p>
+              </div>
+
+              <!-- Icon Cart -->
+              <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+              </div>
+                <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
+              </div>
+          </div>
+          
+          <div class="position-absolute bg-success text-light text-bold text-size-xxs t-0 l-0 p-1">
+              <span class="mx-2">25% off</span>
+          </div>
+
+          <!-- Icon Heart -->
+          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
+              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          </div>
+        </div>   
+
+        <!-- Product Card -->
+        <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
+          <!-- Image of the product card -->
+          <div class="no-flex-shrink img-size bg-black">
+            <!-- Free image from Unsplash site -->
+            <img src="./public/images/products/blackheadphones.jpg" class="mt-15 display-flex align-content-center img-max-width img-xs-width" alt="Image of black headphones">
+          </div>
+          
+          <div class="p-6 display-flex flex-column position-relative ">
+              <h2 class="text-size-lg text-secondary">Cooli 1.0</h2>
+              <div class="text-size-xs text-secondary">Headphones</div>
+              <div class="text-size-sm text-secondary my-4">$40</div>
+              <div class="text-size-xs text-secondary">
+                <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">Listen to your music with noice cancelling function and forget your surrounds. No chords to consider, just chorus.</p>
+              </div>
+
+              <!-- Icon Cart -->
+              <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+              </div>
+                <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
+              </div>
+          </div>
+          
+          <div class="position-absolute bg-success text-light text-bold text-size-xxs t-0 l-0 p-1">
+              <span class="mx-2 uppercase">50%</span>
+          </div>
+
+          <!-- Icon Heart -->
+          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
+              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          </div>
+        </div>        
+
       <!-- End of Product Card Container -->
       </div>
 

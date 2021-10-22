@@ -28,6 +28,8 @@
 .mb-1, .my-1 { margin-bottom: var(--distance-1); }
 .mt-2, .my-2 { margin-top: var(--distance-2); } /* Equivalent to .5rem */
 .mb-2, .my-2 { margin-bottom: var(--distance-2); }
+.mt-3, .my-3 { margin-top: var(--distance-3); } /* Equivalent to .5rem */
+.mb-3, .my-3 { margin-bottom: var(--distance-3); }
 .mt-4, .my-4 { margin-top: var(--distance-4); } /* Equivalent to 1rem */
 .mb-4, .my-4 { margin-bottom: var(--distance-4); }
 .mt-6, .my-6 { margin-top: var(--distance-6); } /* Equivalent to 1.5rem */
@@ -42,11 +44,14 @@
 .mb-15, .my-15 { margin-bottom: var(--distance-15); }
 
 .mb-20, .my-20 { margin-bottom: var(--distance-20); }
+.mt-20 { margin-top: var(--distance-20); }
 
 .mr-1, .mx-1 { margin-right: var(--distance-1); } /* Equivalent to 1rem */
 .ml-1, .mx-1 { margin-left: var(--distance-1); }
 .mr-2, .mx-2 { margin-right: var(--distance-2); } /* Equivalent to 1rem */
 .ml-2, .mx-2 { margin-left: var(--distance-2); }
+.mr-3, .mx-3 { margin-right: var(--distance-3); } /* Equivalent to 1rem */
+.ml-3, .mx-3 { margin-left: var(--distance-3); }
 .mr-4, .mx-4 { margin-right: var(--distance-4); } /* Equivalent to 1rem */
 .ml-4, .mx-4 { margin-left: var(--distance-4); }
 .mr-6, .mx-6 { margin-right: var(--distance-6); } /* Equivalent to 1.5rem */
@@ -70,20 +75,23 @@
 .p-12 { padding: var(--distance-12); }
 .p-15 { padding: var(--distance-15); }
 
+.product-card { max-width: 30%; max-height: 55%; }
+.box-shadow { box-shadow: 0px px 8px var(--color-lightgrey); }
+.product-transition { transition: all 300ms ease-out; }
+.product-card:hover { 
+  box-shadow: 0px 6px 28px var(--color-lightgrey); 
+}
+
 /* Width settings */
 /* Set the max width for the page regardless how stretched it is */
 .max-width { max-width: 192rem; } /* Equivalent to 1920 pixels */
 .icon-width { width: 37.5rem; }
 .searchbar-width { width: 36.5rem; }
 .searchbar-input-width { width: 100%; }
-.aside-width { width: 25rem; }
-.product-card-width { flex-basis: 30%; }
-
+.aside-width { flex-basis: 30rem; }
 
 /* Height Settings */
 .height-nav { height: 5rem; }
-.product-card-height { height: 25rem; }
-.product-card-width { max-width: 150rem;}
 
 /* Typography setting */
 .text-decoration-none { text-decoration: none; }
@@ -127,7 +135,7 @@
 .border-bottom { border-bottom: var(--border-xs-grey); }
 
 /* Nav button settings */ 
-.z-index { z-index: 2;  } /* Tried to use class for z-index but the sizing got wrong then */
+.z-index { z-index: 11;  } /* Tried to use class for z-index but the sizing got wrong then */
 .z-index button:focus + ul { opacity: 1; pointer-events: all; }
 .no-list { opacity: 0; transition: all 0.4s ease; pointer-events: none; } 
 
@@ -146,6 +154,9 @@ div span a:hover {
   color: var(--color-blue);
 }
 
+autofill:visit { background-color: red; }
+
+
 /* Figure Settings */
 .icon-badge { 
   top: -1px;
@@ -153,15 +164,24 @@ div span a:hover {
   padding: var(--distance-0) var(--distance-3);
 }
 
+.icon-large { 
+  padding: var(--distance-2) var(--distance-2);
+}
+
 .circle { border-radius: 100%; }
 
 .line-vertical { border-left: 0.1rem solid var(--color-grey); height: 5.75rem; }
 
-/* Limit content */
+
+/* Webkit Limit content */
 .webkit-line-clamp { -webkit-line-clamp: 3; }
 .webkit-box-orient { -webkit-box-orient: vertical; }
 
 /* Image Settings */
-.img-lg-width { max-width: 30%; }
-.img-lg-height { max-height: 30%; }
+.img-size { max-width: 30%; max-height: 100%; }
 .img-max-width { max-width: 100%; }
+.img-object-fit { object-fit: cover; }
+
+/* Images */
+.pinkheadphone-image { background-image: url('./public/images/pinkheadphone.jpg'); }
+

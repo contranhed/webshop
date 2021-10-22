@@ -12,6 +12,13 @@
     --color-transparent: transparent; /* Used to make a border transparent */
     --color-border: #dee2e6;
     --color-dark-transparent: rgba(0, 0, 0, 0.2);
+    --color-yellow: #FADA5E;
+    --color-black: #000000;
+    --color-purple: #b784a7;
+    --color-pink: #ffc1cc;
+    --color-orange: #FFA500;
+    --color-lightgrey: #A7ABAD;
+    --color-turquoise: #0087bd;
 
     /* Differences font sizes for display on the page / List of variables for reuse in the application */
     --display-xxs: 1rem; 
@@ -112,6 +119,14 @@ body {
 .bg-white, .btn-white { background-color: var(--color-white); }
 .bg-transparent { background-color: var(--color-transparent); }
 .bg-dark-transparent { background-color: var(--color-dark-transparent); }
+.bg-yellow { background-color: var(--color-yellow); }
+.bg-black { background-color: var(--color-black); }
+.bg-purple { background-color: var(--color-purple); }
+.bg-pink { background-color: var(--color-pink); }
+.bg-orange { background-color: var(--color-orange); }
+.bg-lightgrey { background-color: var(--color-lightgrey); }
+.bg-turquoise { background-color: var(--color-turquoise); }
+
 
 /* Text colors used for the page */
 .text-secondary { color: var(--color-secondary); }
@@ -132,4 +147,4 @@ body {
 .border-color-white { border-color: var(--color-white)!important; }
 .border-color-transparent {border-color: var(--color-transparent); }
 .border-color-grey { border-color: var(--color-grey)!important; }
-
+.border-color-lightgrey { border-color: var(--color-lightgrey)!important; }
