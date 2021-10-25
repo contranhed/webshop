@@ -134,6 +134,12 @@
   font-weight: bold;
 }
 
+.btn a i:hover { 
+  background-color: var(--color-darkturquoise);
+  color: var(--color-lightturquoise);
+  border: var(--color-darkturquoise);
+}
+
 a:hover { 
   color: var(--color-orange); 
   font-weight: bold;
