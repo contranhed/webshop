@@ -2,9 +2,6 @@
 :root {
     /* Colors used on the page / List of variables for reuse in the application */
     --color-secondary: #6c757d;
-    --color-success: #00b300;
-    --color-info: #84bed6;
-    --color-blue: rgb(104, 149, 228);
     --color-light: #f8f9fa;
     --color-dark: #343a40;
     --color-grey: #e6e6e6;
@@ -12,13 +9,17 @@
     --color-transparent: transparent; /* Used to make a border transparent */
     --color-border: #dee2e6;
     --color-dark-transparent: rgba(0, 0, 0, 0.2);
-    --color-yellow: #FADA5E;
     --color-black: #000000;
     --color-purple: #b784a7;
     --color-pink: #ffc1cc;
     --color-orange: #FFA500;
+    --color-darkorange: #ce7058;
     --color-lightgrey: #A7ABAD;
-    --color-turquoise: #0087bd;
+    --color-oceanblue: #0087bd;
+    --color-turquoise: #47adb4;
+    --color-darkturquoise: #246b78;
+    --color-lightturquoise: #f1f9f9;
+
 
     /* Differences font sizes for display on the page / List of variables for reuse in the application */
     --display-xxs: 1rem; 
@@ -28,6 +29,7 @@
     --display-lg: 2rem;
     --display-xl: 2.5rem;
     --display-xxl: 3rem;
+    --display-sl: 5rem;
 
     /* Different line heights used based on the page / List of variables for reuse in the application */
     --line-height-sm: 1rem;
@@ -52,23 +54,21 @@
     --distance-14: 3.5rem;
     --distance-15: 3.75rem;
     --distance-16: 4rem;
-
-
     --distance-18: 4.5rem;
     --distance-20: 5rem;
+    --distance-22: 5.5rem;
+    --distance-24: 6rem;
 
     /* Borders used for the page */
-    --border-xs-light: 0.1rem solid var(--color-light); /* Equivalent to 1 pixel and use variable to get the color specified above */
     --border-xs: .1rem solid var(--color-light);
-    --border-xs-secondary: .1rem solid var(--color-secondary);
+    --border-xs-light: 0.1rem solid var(--color-light); /* Equivalent to 1 pixel and use variable to get the color specified above */
     --border-xs-grey: .1rem solid var(--color-grey);
-    --border-sm: .2rem solid var(--color-light); /* Equivalent to 2 pixels */
-    --border-md: .3rem solid var(--color-dark); /* Equivalent to 3 pixels */
-    --border-lg: .4rem solid var(--color-white); /* Equivalent to 4 pixels */
-
+    --border-xs-turquoise: .1rem solid var(--color-turquoise);
+    --border-xs-lightturquoise: .1rem solid var(--color-lightturquoise);
+    
     --border-radius-sm: .25rem; /* Rounded edges */
     --border-transparent: .1 solid var(--color-transparent); /* Makes a border invisible */
-    --border-bottom: .2rem solid var(--color-grey);
+    --border-bottom: .2rem solid var(--color-turquoise);
 }
 
 /* A manual reset of CSS that selects all elements in the document. Removes all default margins and paddings on the elements. */
@@ -94,7 +94,7 @@ body {
     font-family: 'Open Sans', sans-serif; /* Chosen default font and second choice that is the brower's default sans-serif font */
     font-weight: 400;
     line-height: 1.6;
-    color: var(--color-dark); /* Use of variable specified above */
+    color: var(--color-darkturquoise); /* Use of variable specified above */
     font-size: var(--display-sm); /* Use of variable specified above and sets it to default 16px */
     min-height: 100vh; /* Full viewport height for the page */
 }
@@ -112,39 +112,42 @@ body {
 
 /* Background colors used for the page */
 .bg-secondary, .btn-secondary { background-color: var(--color-secondary); }
-.bg-success, .btn-success { background-color: var(--color-success); }
-.bg-info, .btn-info { background-color: var(--color-info); }
 .bg-light, .btn-light { background-color: var(--color-light); }
 .bg-dark, .btn-dark { background-color: var(--color-dark); }
 .bg-white, .btn-white { background-color: var(--color-white); }
 .bg-transparent { background-color: var(--color-transparent); }
 .bg-dark-transparent { background-color: var(--color-dark-transparent); }
-.bg-yellow { background-color: var(--color-yellow); }
 .bg-black { background-color: var(--color-black); }
 .bg-purple { background-color: var(--color-purple); }
 .bg-pink { background-color: var(--color-pink); }
 .bg-orange { background-color: var(--color-orange); }
+.bg-darkorange, .btn-darkorange { background-color: var(--color-darkorange); }
 .bg-lightgrey { background-color: var(--color-lightgrey); }
-.bg-turquoise { background-color: var(--color-turquoise); }
-
+.bg-oceanblue { background-color: var(--color-oceanblue); }
+.bg-turquoise, .btn-turquoise { background-color: var(--color-turquoise); }
+.bg-darkturquoise, .btn-darkturquoise { background-color: var(--color-darkturquoise)}
+.bg-lightturquoise, .btn-lightturquoise { background-color: var(--color-lightturquoise)}
 
 /* Text colors used for the page */
 .text-secondary { color: var(--color-secondary); }
-.text-success { color: var(--color-success); }
-.text-info { color: var(--color-info); }
 .text-light { color: var(--color-light); }
 .text-dark { color: var(--color-dark); }
 .text-white { color: var(--color-white); }
 .text-blue { color: var(--color-blue); }
 .text-grey { color: var(--color-grey); }
+.text-turquoise { color: var(--color-turquoise); }
+.text-darkturquoise { color: var(--color-darkturquoise); }
+.text-lightturquoise { color: var(--color-lightturquoise); }
+.text-darkorange { color: var(--color-darkorange); }
 
 /* Border colors used for the page / !important overrides and ensures the below syntax precede any other styling in the application */
 .border-color-secondary { border-color: var(--color-secondary)!important; }
-.border-color-success { border-color: var(--color-success)!important; }
-.border-color-info { border-color: var(--color-info)!important; }
 .border-color-light { border-color: var(--color-light)!important; }
 .border-color-dark { border-color: var(--color-dark)!important; }
 .border-color-white { border-color: var(--color-white)!important; }
 .border-color-transparent {border-color: var(--color-transparent); }
 .border-color-grey { border-color: var(--color-grey)!important; }
 .border-color-lightgrey { border-color: var(--color-lightgrey)!important; }
+.border-color-turquoise { border-color: var(--color-turquoise)!important; }
+.border-color-lightturquoise { border-color: var(--color-lightturquoise) !important; }
+.border-color-darkturquoise { border-color: var(--color-darkturquoise); }

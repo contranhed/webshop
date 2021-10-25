@@ -1,19 +1,9 @@
 /* Style settings for the page layout */
 
-.lh-sm { line-height: var(--line-height-sm); }
-.lh-md { line-height: var(--line-height-md); }
-.lh-lg { line-height: var(--line-height-lg); }
-
 /* Position settings */
 .position-relative { position: relative !important; } 
 .position-absolute { position: absolute !important; }
 .overflow-hidden { overflow: hidden; }
-
-.centerXY { /* Used in absolute positioning to center the elements/items */
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 /* Margin settings */
 .mr-auto, .mx-auto { margin-right: auto; } /* Centers the margin outside of the div */
@@ -76,7 +66,7 @@
 .p-15 { padding: var(--distance-15); }
 
 .product-card { max-width: 30%; max-height: 55%; }
-.box-shadow { box-shadow: 0px px 8px var(--color-lightgrey); }
+.box-shadow { box-shadow: 0px px 6px var(--color-lightgrey); }
 .product-transition { transition: all 300ms ease-out; }
 .product-card:hover { 
   box-shadow: 0px 6px 28px var(--color-lightgrey); 
@@ -91,7 +81,8 @@
 .aside-width { flex-basis: 30rem; }
 
 /* Height Settings */
-.height-nav { height: 5rem; }
+.height-nav { height: 6rem; }
+.height-footer { height: 20rem; }
 
 /* Typography setting */
 .text-decoration-none { text-decoration: none; }
@@ -107,8 +98,6 @@
 .text-size-xl { font-size: var(--display-xl); }
 .text-size-xxl { font-size: var(--display-xxl); }
 
-.lh-sm { line-height: var(--line-height-sm); }
-.lh-md { line-height: var(--line-height-md); }
 .lh-lg { line-height: var(--line-height-lg); }
 
 .ls-spacing-sm { letter-spacing: var(--distance-1); }
@@ -118,21 +107,19 @@
 .break-word-wrap { overflow-wrap: break-word; }
 
 /* Border Settings */
-.border-small-white { border: var(--border-xs-white); }
-.border-small-light { border: var(--border-xs-light); }
-.border-small-dark { border: var(--border-xs-dark); }
-.border-small-secondary { border: var(--border-xs-secondary); }
+.border-transparent { border: var(--border-transparent); }
+
+.border-bottom { border-bottom: var(--border-xs-grey); }
+/* .border-bottom-xs { border-bottom: var(--border-xs); } */
+
+.border-xs-grey { border: var(--border-xs-grey); }
+.border-xs-turquoise { border: var(--border-xs-turquoise); }
+.border-xs-lightturquoise { border: var(--border-xs-lightturquoise); }
+
+/* Border radius*/
 .border-radius { border-radius: var(--border-radius-sm); }
 .border-radius-nav { border-radius: 0rem, 0rem, .25rem, .25rem }
-.border-bottom-xs { border-bottom: var(--border-xs); }
-.border-xs { border: var(--border-xs-light); }
-.border-xs-secondary { border: var(--border-xs-secondary); }
-.border-xs-grey { border: var(--border-xs-grey); }
-.border-md { border: var(--border-md-dark); }
-.border-sm { border: var(--border-sm); }
-.border-lg { border: var(--border-lg); }
-.border-transparent { border: var(--border-transparent); }
-.border-bottom { border-bottom: var(--border-xs-grey); }
+.border-radius-btn { border-radius: 0.2rem 0.25rem 0rem 0rem; }
 
 /* Nav button settings */ 
 .z-index { z-index: 11;  } /* Tried to use class for z-index but the sizing got wrong then */
@@ -140,22 +127,17 @@
 .no-list { opacity: 0; transition: all 0.4s ease; pointer-events: none; } 
 
 /* Hover Effects */
-aside ul a:hover {
-  color: var(--color-blue);
-}
 
 .list-item:hover { 
-  color: var(--color-blue);
-  width: 100%;
-  height: 100%;
+  color: var(--color-orange);
+  background-color: var(--color-lightturquoise);
+  font-weight: bold;
 }
 
-div span a:hover {
-  color: var(--color-blue);
+a:hover { 
+  color: var(--color-orange); 
+  font-weight: bold;
 }
-
-autofill:visit { background-color: red; }
-
 
 /* Figure Settings */
 .icon-badge { 
@@ -168,20 +150,75 @@ autofill:visit { background-color: red; }
   padding: var(--distance-2) var(--distance-2);
 }
 
+.social-icon-size { 
+  width: 3rem; 
+  height: 3rem;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: bottom;
+  font-size: var(--display-xl);
+}
+
+.social-icon-size-center { 
+  width: 3rem; 
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  align-content: bottom;
+  font-size: var(--display-xl);
+}
+
+.soc-icon:hover { 
+  background-color: var(--color-darkturquoise); 
+}
+
+.gradient-color { 
+  color: transparent; 
+  background: linear-gradient(var(--color-lightturquoise), var(--color-turquoise));
+  -webkit-background-clip: text;
+}
+
 .circle { border-radius: 100%; }
 
-.line-vertical { border-left: 0.1rem solid var(--color-grey); height: 5.75rem; }
+.line-vertical { border-left: 0.1rem solid var(--color-turquoise); height: 5.75rem; }
 
-
-/* Webkit Limit content */
+/* Webkit Limit Content product info */
 .webkit-line-clamp { -webkit-line-clamp: 3; }
 .webkit-box-orient { -webkit-box-orient: vertical; }
 
 /* Image Settings */
 .img-size { max-width: 30%; max-height: 100%; }
 .img-max-width { max-width: 100%; }
-.img-object-fit { object-fit: cover; }
 
-/* Images */
-.pinkheadphone-image { background-image: url('./public/images/pinkheadphone.jpg'); }
+.icon-heart { 
+  position: absolute;
+  color: var(--color-darkturquoise);
+  top: var(--distance-0); 
+  right: var(--distance-0); 
+  margin-top: (--distance-6);
+  margin-right: (--distance-6);
+  text-decoration: none;
+}  
 
+.heart { color: var(--color-lightgrey); }
+
+.heart.red { color: red; }
+
+.star { color: var(--color-lightgrey); }
+.star.orange { color: var(--color-orange); }
+
+.new-icon { 
+  position: absolute;
+  padding: var(--distance-2) var(--distance-2);
+  background-color: var(--color-orange);
+  font-weight: bold;
+  font-size: var(--display-xxs);
+  color: var(--color-light);  
+  border: var(--border-xs-light); 
+  text-transform: uppercase;
+  margin-right: var(--distance-3);
+  margin-left: var(--distance-3); 
+  margin-top: var(--distance-4); 
+}
+
+  

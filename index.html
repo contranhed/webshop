@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./public/css/mediaqueries.css">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c016a9893b.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+
     <title>Web shop</title>
 </head>
 
@@ -22,31 +22,31 @@
       <!-- Top Bar Section -->
       <section class=" flex-row flex-grow flex-shrink justify-content-between align-items-center align-content-center">
         <!-- Navbar Container -->
-        <nav class="display-flex flex-row flex-grow flex-shrink justify-content-between height-nav bg-dark text-light">
+        <nav class="display-flex flex-row flex-grow flex-shrink justify-content-between height-nav bg-turquoise text-lightturquoise">
           
           <!-- Drop-Down Button -->
-          <div class="display-flex display-inline-block flex-row justify-content-center align-items-center z-index text-size-lg my-2 ml-6">
-              <button class="btn-dark border-small-light border-xs">
-                <i class="fas fa-user text-light text-size-xxs align-items-center p-2 my-2 ml-2 "></i>
-                <a href="#" class="text-decoration-none text-size-xs text-light hide-name-sm"></i>Ada Lovelace</a>
-                <i class="fas fa-caret-down text-light text-size-xxs ml-1 mr-4"></i>
+          <div class="display-flex display-inline-block flex-row justify-content-center align-content-center align-items-center z-index text-lightturquoise text-size-lg mt-3 ml-6">
+              <button id="btn" class="display-flex justify-content-center align-items-center btn-lightturquoise border-transparent border-radius-btn p-2">
+                <i class="fas fa-user text-darkturquoise text-size-xs align-items-center p-1 my-2 ml-2 mr-1"></i>
+                <a href="#" class="text-decoration-none text-size-xs text-darkturquoise hide-name-sm"></i>Ada Lovelace</a>
+                <i class="fas fa-caret-down text-darkturquoise text-size-xs ml-2 mr-4"></i>
               </button>
-              <ul class="display-flex flex-column align-items-left align-content-center lh-lg bg-light text-size-xs list-style-none no-list">
+              <ul id="list" class="display-flex flex-column align-items-left align-content-center lh-lg bg-lightturquoise text-size-xs list-style-none no-list">
                 <li class="display-flex flex-column align-items-left">
-                  <a href="#" class="list-item text-decoration-none text-dark ml-2">Grace Hopper</a>
+                  <a href="#" class="list-item text-decoration-none text-darkturquoise ml-2">Grace Hopper</a>
                 </li>
                 <li class="display-flex flex-column align-items-left">
-                  <a href="#" class="list-item text-decoration-none text-dark ml-2">Ada Lovelace</a>
+                  <a href="#" class="list-item text-decoration-none text-darkturquoise ml-2">Ada Lovelace</a>
                 </li>
                 <li class="display-flex flex-column align-items-left">
-                  <a href="#" class="list-item text-decoration-none text-dark ml-2">Margaret Hamilton</a>
+                  <a href="#" class="list-item text-decoration-none text-darkturquoise ml-2">Margaret Hamilton</a>
                 </li>
               </ul>
           </div>
 
           <!-- Contact Details -->
           <div class="display-flex flex-row justify-content-between align-items-center align-content-center text-size-xs contact-hidden-sm">
-            <div class="mr-4 phone-hidden-sm">
+            <div class="mr-6 phone-hidden-sm">
               <i class="fas fa-phone-alt"></i>
               <span>555 555 555</span>
             </div>
@@ -59,31 +59,30 @@
           <!-- Social Media Icons -->
           <div class="display-flex flex-row justify-content-between align-items-center align-content-center mr-4">
 
-    
             <!-- Icon -->
-            <a href="#" class="text-decoration-none text-light border-radius">
-              <div class="display-flex flex-row text-size-xl p-1">
-                <i class="fab fa-facebook-square"></i>
+            <a href="#" class="soc-icon text-decoration-none text-turquoise bg-light border-radius mr-3">
+              <div class="display-flex flex-row social-icon-size gradient-color">
+                <i class="fab fa-facebook-f"></i>
               </div>
             </a>
             
             <!-- Icon -->        
-            <a href="#" class="text-decoration-none bg-light text-dark border-radius mr-1">
-              <div class="display-flex flex-row text-size-sm p-1">
+            <a href="#" class="soc-icon text-decoration-none bg-light text-turquoise border-radius mr-3">
+              <div class="display-flex flex-row social-icon-size-center gradient-color">
                 <i class="fab fa-twitter"></i>
               </div>
             </a>
 
             <!-- Icon -->          
-            <a href="#" class="text-decoration-none bg-light text-dark border-radius mr-1">
-              <div class="display-flex flex-row text-size-sm p-1">
+            <a href="#" class="soc-icon text-decoration-none bg-light text-turquoise border-radius mr-3">
+              <div class="display-flex flex-row social-icon-size-center gradient-color">
                 <i class="fab fa-instagram"></i>
               </div> 
             </a>
             
             <!-- Icon -->          
-            <a href="#" class="text-decoration-none bg-light text-dark border-radius mr-1">
-              <div class="display-flex flex-row text-size-sm p-1">
+            <a href="#" class="soc-icon text-decoration-none bg-light text-turquoise border-radius mr-4">
+              <div class="display-flex flex-row social-icon-size gradient-color">
                 <i class="fab fa-pinterest-p"></i>            
               </div>
             </a>
@@ -96,16 +95,16 @@
       <section class=" display-flex flex-row flex-grow flex-shrink flex-wrap bg-white justify-content-center align-items-center p-6 border-bottom-sm">
         <!-- Website Name Container -->
         <div class="display-flex width-sm bg-white justify-content-center-sm mb-storename-sm">
-          <h5 class="text-uppercase text-size-sm text-secondary mx-2 ls-spacing-sm">my store</h5>
+          <h4 class="text-uppercase text-size-sm text-turquoise mx-2 ls-spacing-sm">my store</h4>
         </div>
 
         <!-- Search Bar Container -->
         <div class="display-flex flex-wrap flex-grow flex-shrink align-items-center align-content-flex-start mx-4 order-last-sm search-mx-sm search-mt-sm">
-            <form class="display-flex flex-row flex-grow flex-shrink justify-content-flex-start align-content-center align-items-center searchbar-min-width-sm">
-              <button type="submit" class="border-color-transparent">
-                <a href=""><i class="fas fa-search text-secondary p-4"></i></a>
+            <form class="display-flex flex-row flex-grow flex-shrink justify-content-flex-start align-content-center align-items-center searchbar-min-width-sm ">
+              <button type="submit" class="border-xs-turquoise bg-turquoise">
+                <a href="#"><i class="fas fa-search border-xs-turquoise bg-turquoise text-lightturquoise p-4"></i></a>
               </button>
-              <input type="text" class="p-4 border-color-transparent searchbar-input-width border-xs-grey" placeholder="Search products...">
+              <input type="text" class="p-4 searchbar-input-width border-xs-turquoise " placeholder="Search products...">
             </form>
         </div>
 
@@ -116,9 +115,9 @@
           <div class="display-flex flex-column display-none display-block-sm">
             <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl ">
               <div class="display-flex flex-row align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                  <i class="fas fa-bars text-secondary"></i>
+                  <i class="fas fa-bars text-turquoise"></i>
               </div>
-              <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">Menu</div>
+              <div class="display-flex flex-column text-size-xs text-uppercase text-turquoise">Menu</div>
             </a>
           </div>
 
@@ -129,10 +128,10 @@
           <div class="display-flex flex-column">
             <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
               <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                  <i class="fas fa-heart text-secondary"></i>
+                  <i class="fas fa-heart text-turquoise"></i>
               </div>
-              <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">3</span>
-              <div class="display-flex flex-column text-size-xs text-uppercase text-secondary ">Favs</div>
+              <span class="text-lightturquoise position-absolute icon-badge circle bg-orange border-xs-lightturquoise text-size-xs">3</span>
+              <div class="display-flex flex-column text-size-xs text-uppercase text-turquoise ">Favs</div>
             </a>
           </div>
 
@@ -143,10 +142,10 @@
           <div class="display-flex flex-column">
             <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
               <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                  <i class="fas fa-shopping-cart text-secondary"></i>
+                  <i class="fas fa-shopping-cart text-turquoise"></i>
               </div>
-              <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">2</span>
-              <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">$1453.5</div>
+              <span class="text-lightturquoise position-absolute icon-badge circle bg-orange border-xs-lightturquoise text-size-xs">2</span>
+              <div class="display-flex flex-column text-size-xs text-uppercase text-turquoise">$1453.5</div>
             </a>
           </div>
 
@@ -157,10 +156,10 @@
           <div class="display-flex flex-column">
             <a href="#" class="display-flex flex-column align-items-center text-decoration-none text-size-xl position-relative">
               <div class="display-flex align-items-center justify-content-center bg-transparent p-2 shadow-sm border-radius mx-2">
-                  <i class="fas fa-file-invoice-dollar text-secondary"></i>
+                  <i class="fas fa-file-invoice-dollar text-turquoise"></i>
               </div>
-              <span class="text-white position-absolute icon-badge circle bg-success border-small-light text-size-xs">0</span>
-              <div class="display-flex flex-column text-size-xs text-uppercase text-secondary">$0.00</div>
+              <span class="text-lightturquoise position-absolute icon-badge circle bg-orange border-xs-lightturquoise text-size-xs">0</span>
+              <div class="display-flex flex-column text-size-xs text-uppercase text-turquoise">$0.00</div>
             </a>
           </div>
 
@@ -170,47 +169,45 @@
 
     </header>
 
-    <!-- Border Across Site
-    <hr class="border-xs-grey bar-hidden-sm"> -->
 
     <!-- Product Section -->
     <section class="display-flex flex-row max-width flex-column-sm margin-top-sm">
 
       <!-- Sidebar Product List Container -->
       <aside class="display-flex flex-column no-flex-shrink aside-width flex-grow-aside-sm m-6 width-sm ml-0-sm mr-0-sm mt-0-sm">
-          <ul class="display-flex flex-column align-items-left align-content-center list-style-none border-xs-grey text-secondary text-size-sm text-bold "> 
+          <ul class="display-flex flex-column align-items-left align-content-center list-style-none border-xs-grey text-darkturquoise text-size-sm text-bold "> 
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom list-item"><i class="fas fa-hdd text-blue mx-4 my-6 mr-4-sm"></i>Computers & Accessories</li>
+              <li class="text-darkturquoise border-bottom list-item"><i class="icon fas fa-hdd text-turquoise mx-4 my-6 mr-4-sm"></i>Computers & Accessories</li>
             </a>
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom list-item"><i class="fas fa-desktop text-blue mx-4 my-6"></i>TV, Video & Audio</li>
+              <li class="text-darkturquoise border-bottom list-item"><i class="icon fas fa-desktop text-turquoise mx-4 my-6"></i>TV, Video & Audio</li>
             </a>            
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom list-item"><i class="fas fa-mobile-alt text-blue mx-4 my-6"></i>Smartphones & Tablets</li>
+              <li class="text-darkturquoise border-bottom list-item"><i class="icon fas fa-mobile-alt text-turquoise mx-4 my-6"></i>Smartphones & Tablets</li>
             </a>            
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom list-item"><i class="fas fa-camera-retro text-blue mx-4 my-6"></i>Photo Cameras</li>
+              <li class="text-darkturquoise border-bottom list-item"><i class="icon fas fa-camera-retro text-turquoise mx-4 my-6"></i>Photo Cameras</li>
             </a>            
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom list-item"><i class="fas fa-video text-blue mx-4 my-6"></i>Video Cameras</li>
+              <li class="text-darkturquoise border-bottom list-item"><i class="icon fas fa-video text-turquoise mx-4 my-6"></i>Video Cameras</li>
             </a>            
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom list-item"><i class="fas fa-headphones text-blue mx-4 my-6"></i>Headphones</li>
+              <li class="text-darkturquoise border-bottom list-item"><i class="icon fas fa-headphones text-turquoise mx-4 my-6"></i>Headphones</li>
             </a>            
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom list-item"><i class="fas fa-clock text-blue mx-4 my-6"></i>Wearable Electronics</li>
+              <li class="text-darkturquoise border-bottom list-item"><i class="icon fas fa-clock text-turquoise mx-4 my-6"></i>Wearable Electronics</li>
             </a>            
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom list-item"><i class="fas fa-images text-blue mx-4 my-6"></i>Printers & Ink</li>
+              <li class="text-darkturquoise border-bottom list-item"><i class="icon fas fa-images text-turquoise mx-4 my-6"></i>Printers & Ink</li>
             </a>            
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom list-item"><i class="fas fa-gamepad text-blue mx-4 my-6"></i>Video Games</li>
+              <li class="text-darkturquoise border-bottom list-item"><i class="icon fas fa-gamepad text-turquoise mx-4 my-6"></i>Video Games</li>
             </a>            
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary border-bottom  list-item"><i class="fas fa-volume-down text-blue mx-4 my-6"></i>Speakers & Home Music</li>
+              <li class="text-darkturquoise border-bottom  list-item"><i class="icon fas fa-volume-down text-turquoise mx-4 my-6"></i>Speakers & Home Music</li>
             </a>            
             <a href="#" class="text-decoration-none">
-              <li class="text-secondary list-item"><i class="fas fa-server text-blue mx-4 my-6"></i>HDD / SDD Data Storage</li>
+              <li class="text-darkturquoise list-item"><i class="fas fa-server text-turquoise mx-4 my-6"></i>HDD / SDD Data Storage</li>
             </a>
           </ul>
       </aside>
@@ -219,52 +216,50 @@
       <div class="display-flex flex-row flex-wrap align-content-start overflow-hidden card-flex-column-sm no-margin-top-sm">
 
         <!-- Product Card -->
-        <div class=" product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm ">
+        <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm ">
           <!-- Image of the product card -->
-          <div class="no-flex-shrink img-size bg-pink">
+          <div class="no-flex-shrink img-size bg-pink background-color-sm">
             <!-- Free image from Unsplash site -->            
-            <img src="./public/images/products/camera.jpg" class="mt-12 justify-content-center align-items-center align-content-center img-max-width img-xs-width img-object-fit-sd" alt="Image of a laptop">
+            <img src="./public/images/products/camera.jpg" class="mt-12 justify-content-center align-items-center align-content-center img-max-width img-xs-width " alt="Image of a laptop">
           </div>
           
           <div class="p-6 display-flex flex-column position-relative ">
-              <h2 class="text-size-lg text-secondary">Mini Camera</h2>
-              <div class="text-size-xs text-secondary">Photo Cameras</div>
-              <div class="text-size-sm text-secondary my-4">$56</div>
-              <div class="text-size-xs text-secondary">
+              <h2 class="text-size-lg text-darkturquoise">Mini Camera</h2>
+              <div class="text-size-xs text-darkturquoise">Photo Cameras</div>
+              <div class="text-size-sm text-darkturquoise my-4">$56</div>
+              <div class="text-size-xs text-darkturquoise">
                 <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">Cute pocket camera that instantly gives the retro feel. Take amazing pictures and upload to your instagram with one button click </p>
               </div>
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#" class="icon-visit"><i class="fas fa-cart-plus text-size-lg text-secondary"></i></a>
+                <a href="#" class=""><i class="fas fa-cart-plus text-size-lg text-darkturquoise"></i></a>
               </div>
                 <!-- Icon Star with rating -->
-              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                <a href="#" class="text-decoration-none text-secondary">4.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
-              </div>
+                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                  3<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+               </div>
           </div>
           
           <!-- Icon Heart -->
-          <div class="position-absolute text-secondary text-size-xxs t-0 r-0 mt-6 mr-6 text-decoration-none">
-              <a href="#"><i class="far fa-heart text-size-lg"></i></a>
+          <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
+            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
-
         </div>
 
         <!-- Product Card -->
         <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
           <!-- Image of the product card -->
-          <div class="no-flex-shrink img-size bg-purple">
+          <div class="no-flex-shrink img-size bg-purple background-color-sm">
             <!-- Free image from Unsplash site -->            
             <img src="./public/images/products/marshalls.jpg" class="mt-12 justify-content-center align-items-center align-content-center img-max-width img-xs-width" alt="Image of a laptop">
           </div>
 
-
           <div class="p-6 display-flex flex-column position-relative ">
-              <h2 class="text-size-lg text-secondary">Marchies</h2>
-              <div class="text-size-xs text-secondary">Headphones</div>
-              <div class="text-size-sm text-secondary my-4">$30</div>
-              <div class="text-size-xs text-secondary">
+              <h2 class="text-size-lg text-darkturquoise">Marchies</h2>
+              <div class="text-size-xs text-darkturquoise">Headphones</div>
+              <div class="text-size-sm text-darkturquoise my-4">$30</div>
+              <div class="text-size-xs text-darkturquoise">
                 <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">With 60+ solid hours of wireless playtime, you get this top-of-the-line wireless headphones that provides ergonomic design. With more than three full days of power, you can stop worrying about your headphones dying on you when you need them. Custom-tuned dynamic drivers deliver roaring bass, smooth mids and brilliant treble for a rich, unrivalled sound that you’ll never want to turn off.</p>
               </div>
 
@@ -273,17 +268,17 @@
                 <a href="#" class="autofill"><i class="fas fa-cart-plus text-size-lg"></i></a>
               </div>
                 <!-- Icon Star with rating -->
-              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
-              </div>
+                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6 text-darkturquoise">
+                  4.5<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+               </div>
           </div>      
 
           <!-- Icon Heart -->
-          <div class="position-absolute icon-heart text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
-              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
+            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
 
-          <div class="position-absolute bg-success text-light text-size-xxs t-0 l-0 p-1">
+          <div class="position-absolute bg-turquoise text-bold ls-spacing-xs text-light text-size-xxs t-0 l-0 p-1">
             <span class="mx-2">10% off</span>
           </div>
         </div>
@@ -291,251 +286,248 @@
         <!-- Product Card -->
         <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
           <!-- Image of the product card -->
-          <div class="no-flex-shrink img-size">
+          <div class="no-flex-shrink img-size background-color-sm">
             <!-- Free image from Unsplash site -->
             <img src="./public/images/products/mobilephone.jpg" class="mt-12 justify-content-center align-items-center align-content-center img-max-width img-xs-width" alt="Image of a laptop">
           </div>
           
           <div class="p-6 display-flex flex-column position-relative ">
-              <h2 class="text-size-lg text-secondary">Phoney 3310</h2>
-              <div class="text-size-xs text-secondary">Smartphones & Tablets</div>
-              <div class="text-size-sm text-secondary my-4">$725</div>
-              <div class="text-size-xs text-secondary">
+              <h2 class="text-size-lg text-darkturquoise">Phoney 3310</h2>
+              <div class="text-size-xs text-darkturquoise">Smartphones & Tablets</div>
+              <div class="text-size-sm text-darkturquoise my-4">$725</div>
+              <div class="text-size-xs text-darkturquoise">
                 <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">The Phoney has a user interface built around a multi-touch screen. It connects to cellular networks or Wi-Fi, and can make calls, browse the web, take pictures, play music and send and receive emails and text messages. </p>
               </div>
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
               </div>
                 <!-- Icon Star with rating -->
-              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
-              </div>
+                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                  4<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+               </div>
           </div>
           
-          <div class="position-absolute bg-success text-light text-bold text-size-xxs t-0 l-0 p-1">
+          <div class="position-absolute bg-turquoise text-light text-bold text-size-xxs t-0 l-0 p-1">
               <span class="mx-2">25% off</span>
           </div>
 
           <!-- Icon Heart -->
-          <div class="position-absolute icon-heart text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
-              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
+            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>    
 
         <!-- Product Card -->
         <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
           <!-- Image of the product card -->
-          <div class="no-flex-shrink img-size bg-black">
+          <div class="no-flex-shrink img-size bg-black background-color-sm">
             <!-- Free image from Unsplash site -->
             <img src="./public/images/products/blackheadphones.jpg" class="mt-15 display-flex align-content-center img-max-width img-xs-width" alt="Image of black headphones">
           </div>
           
-          <div class="position-absolute icon-large bg-orange text-light text-bold text-size-xxs circle border-small-light uppercase mx-3 my-3">
+          <div class="new-icon circle new-icon-sm">
             NEW!
           </div>
 
           <div class="p-6 display-flex flex-column position-relative ">
-              <h2 class="text-size-lg text-secondary">Cooli 2.0</h2>
-              <div class="text-size-xs text-secondary">Headphones</div>
-              <div class="text-size-sm text-secondary my-4">$40</div>
-              <div class="text-size-xs text-secondary">
+              <h2 class="text-size-lg text-darkturquoise">Cooli 2.0</h2>
+              <div class="text-size-xs text-darkturquoise">Headphones</div>
+              <div class="text-size-sm text-darkturquoise my-4">$40</div>
+              <div class="text-size-xs text-darkturquoise">
                 <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">Listen to your music with noice cancelling function and forget your surrounds. No chords to consider, just chorus.</p>
               </div>
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
               </div>
                 <!-- Icon Star with rating -->
-              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
-              </div>
+                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6 ">
+                  3.5<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+               </div>
             </div>
           
           <!-- Icon Heart -->
-          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
-              <a href="#"><i class="far fa-heart text-size-lg"></i></a>
+          <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
+            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>        
         
         <!-- Product Card -->
         <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
           <!-- Image of the product card -->
-          <div class="no-flex-shrink img-size bg-lightgrey">
+          <div class="no-flex-shrink img-size background-color-sm">
             <!-- Free image from Unsplash site -->            
-            <img src="./public/images/products/smartwatch.jpg" class="mt-8 justify-content-center align-items-center align-content-center img-max-width img-xs-width" alt="Image of a laptop">
+            <img src="./public/images/products/smartwatch2.jpg" class="mt-20 justify-content-center align-items-center align-content-center img-max-width img-xs-width" alt="Image of a laptop">
           </div>
           
           <div class="p-6 display-flex flex-column position-relative ">
-              <h2 class="text-size-lg text-secondary">WatchIT</h2>
-              <div class="text-size-xs text-secondary">Wearable Electronics</div>
-              <div class="text-size-sm text-secondary my-4">$249</div>
-              <div class="text-size-xs text-secondary">
+              <h2 class="text-size-lg text-darkturquoise">WatchIT</h2>
+              <div class="text-size-xs text-darkturquoise">Wearable Electronics</div>
+              <div class="text-size-sm text-darkturquoise my-4">$249</div>
+              <div class="text-size-xs text-darkturquoise">
                 <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">This small device meets your need of a wearable computer in the form of a watch; modern smartwatches provide a local touchscreen interface for daily use.</p>
               </div>
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
               </div>
                 <!-- Icon Star with rating -->
-              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
-              </div>
+                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                  4<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+               </div>
           </div>
           
           <!-- Icon Heart -->
-          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
-              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm color-text-sm">
+            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>   
         
         <!-- Product Card -->
         <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
           <!-- Image of the product card -->
-          <div class="no-flex-shrink img-size bg-black">
+          <div class="no-flex-shrink img-size bg-black background-color-sm">
             <!-- Free image from Unsplash site -->            
             <img src="./public/images/products/switch.jpg" class="mt-20 justify-content-center align-items-center img-max-width img-xs-width" alt="Image of a laptop">
           </div>
-          
                     
-          <div class="position-absolute icon-large bg-orange text-light text-bold text-size-xxs circle border-small-light uppercase mx-3 my-3">
+          <div class="new-icon circle new-icon-sm">
             NEW!
           </div>
 
           <div class="p-6 display-flex flex-column position-relative ">
-              <h2 class="text-size-lg text-secondary">Switches 3.1</h2>
-              <div class="text-size-xs text-secondary">Video Games</div>
-              <div class="text-size-sm text-secondary my-4">$450</div>
-              <div class="text-size-xs text-secondary">
+              <h2 class="text-size-lg text-darkturquoise">Switches 3.1</h2>
+              <div class="text-size-xs text-darkturquoise">Video Games</div>
+              <div class="text-size-sm text-darkturquoise my-4">$450</div>
+              <div class="text-size-xs text-darkturquoise">
                 <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">This console makes it possible to hit a game whenever, wherever. It is a tablet that can be docked for use as a home console or used as a portable device, making it a hybrid console.</p>
               </div>
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
               </div>
                 <!-- Icon Star with rating -->
-              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
-              </div>
+                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                  5<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+               </div>
           </div>        
 
           <!-- Icon Heart -->
-          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
-              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart">
+            <a href="#" class=""><i class="fas fa-heart text-size-lg heart icon-position-sm"></i></a>
           </div>
         </div>   
  
         <!-- Product Card -->
         <div class=" product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
           <!-- Image of the product card -->
-          <div class="no-flex-shrink img-size bg-turquoise">
+          <div class="no-flex-shrink img-size bg-oceanblue background-color-sm">
             <!-- Free image from Unsplash site -->            
             <img src="./public/images/products/videocamera.jpg" class="mt-15 justify-content-center align-items-center img-max-width img-xs-width" alt="Image of a laptop">
           </div>
 
-          <div class="position-absolute icon-large bg-orange text-light text-bold text-size-xxs circle border-small-light uppercase mx-3 my-3">
+          <div class="new-icon circle new-icon-sm">
             NEW!
           </div>
           
           <div class="p-6 display-flex flex-column position-relative ">
-              <h2 class="text-size-lg text-secondary">Pro Camera 2021</h2>
-              <div class="text-size-xs text-secondary">Video Cameras</div>
-              <div class="text-size-sm text-secondary my-4">$6000</div>
-              <div class="text-size-xs text-secondary">
+              <h2 class="text-size-lg text-darkturquoise">Pro Camera 2021</h2>
+              <div class="text-size-xs text-darkturquoise">Video Cameras</div>
+              <div class="text-size-sm text-darkturquoise my-4">$6000</div>
+              <div class="text-size-xs text-darkturquoise">
                 <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">This is THE camera that turns any amateur into a pro filmer. Light-sensitive and light-weight because of its smart use of plastic.</p>
               </div>
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
               </div>
                 <!-- Icon Star with rating -->
-              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
-              </div>
+                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                  4.5<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+               </div>
           </div>      
 
           <!-- Icon Heart -->
-          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
-              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
+            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>   
         
         <!-- Product Card -->
         <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
           <!-- Image of the product card -->
-          <div class="no-flex-shrink img-size">
+          <div class="no-flex-shrink img-size background-color-sm">
             <!-- Free image from Unsplash site -->            
             <img src="./public/images/products/speakers.jpg" class="mt-20 justify-content-center align-items-center img-max-width img-xs-width" alt="Image of a laptop">
           </div>
-
-          
-          
+ 
           <div class="p-6 display-flex flex-column position-relative ">
-              <h2 class="text-size-lg text-secondary">Retro Speakers</h2>
-              <div class="text-size-xs text-secondary">Speakers & Home Music</div>
-              <div class="text-size-sm text-secondary my-4">$99</div>
-              <div class="text-size-xs text-secondary">
+              <h2 class="text-size-lg text-darkturquoise">Retro Speakers</h2>
+              <div class="text-size-xs text-darkturquoise">Speakers & Home Music</div>
+              <div class="text-size-sm text-darkturquoise my-4">$99</div>
+              <div class="text-size-xs text-darkturquoise">
                 <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">Get the cinema surrounding sounds in a mini size version that easily fits into your home decor. Available in three colors and guaranteed to meet all your needs.</p>
               </div>
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
               </div>
                 <!-- Icon Star with rating -->
-              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
-              </div>
+                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                  3<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+               </div>
           </div>
           
-          <div class="position-absolute bg-success text-light text-bold text-size-xxs t-0 l-0 p-1">
+          <div class="position-absolute bg-turquoise text-light text-bold text-size-xxs t-0 l-0 p-1">
               <span class="mx-2">25% off</span>
           </div>
 
           <!-- Icon Heart -->
-          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
-              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart">
+            <a href="#" class=""><i class="fas fa-heart text-size-lg heart icon-position-sm"></i></a>
           </div>
         </div>   
 
         <!-- Product Card -->
         <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm">
           <!-- Image of the product card -->
-          <div class="no-flex-shrink img-size bg-black">
+          <div class="no-flex-shrink img-size bg-black background-color-sm">
             <!-- Free image from Unsplash site -->
             <img src="./public/images/products/blackheadphones.jpg" class="mt-15 display-flex align-content-center img-max-width img-xs-width" alt="Image of black headphones">
           </div>
           
           <div class="p-6 display-flex flex-column position-relative ">
-              <h2 class="text-size-lg text-secondary">Cooli 1.0</h2>
-              <div class="text-size-xs text-secondary">Headphones</div>
-              <div class="text-size-sm text-secondary my-4">$40</div>
-              <div class="text-size-xs text-secondary">
+              <h2 class="text-size-lg text-darkturquoise">Cooli 1.0</h2>
+              <div class="text-size-xs text-darkturquoise">Headphones</div>
+              <div class="text-size-sm text-darkturquoise my-4">$40</div>
+              <div class="text-size-xs text-darkturquoise">
                 <p class="display-flex no-flex-shrink webkit-line-clamp text-overflow overflow-hidden display-webkit-box webkit-box-orient break-word-wrap mb-20">Listen to your music with noice cancelling function and forget your surrounds. No chords to consider, just chorus.</p>
               </div>
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-secondary "></i></a>
+                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
               </div>
                 <!-- Icon Star with rating -->
-              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                <a href="#" class="text-decoration-none text-secondary">3.5<i class="display-flex flex-row far fa-star text-size-lg text-secondary ml-2"></i></a>
-              </div>
+                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                  3<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+               </div>
           </div>
           
-          <div class="position-absolute bg-success text-light text-bold text-size-xxs t-0 l-0 p-1">
-              <span class="mx-2 uppercase">50%</span>
+          <div class="position-absolute bg-turquoise text-light text-bold text-size-xxs t-0 l-0 p-1">
+              <span class="mx-2 uppercase">50% off</span>
           </div>
 
           <!-- Icon Heart -->
-          <div class="position-absolute text-bold text-size-xxs t-0 r-0 mt-6 mr-6">
-              <a href="#"><i class="far fa-heart text-size-lg text-secondary"></i></a>
+          <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
+            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>        
 
@@ -544,5 +536,26 @@
 
     </section>
     
+    <footer class="height-footer display-flex flex-column flex-grow flex-shrink justify-content-center align-content-center align-items-center height-nav bg-lightturquoise text-turquoise mt-15">
+        <h3 class="mb-10 ls-spacing-sm">MY STORE</h3>
+
+        <div class="text-size-xs display-flex flex-row justify-content-between align-items-center align-content-center mb-2">
+          <div class="mr-6">
+            <i class="fas fa-phone-alt"></i>
+            <span>555 555 555</span>
+          </div>
+          <div>
+            <i class="fas fa-envelope"></i>
+            <span>info@infostore.com</span>
+          </div>
+        </div>
+        <a href="#" class="text-size-xs text-turquoise">Click here to subscribe to our newsletter</a>
+      
+    </footer>
+    
   </body>
-</html>
+
+  <script src="index.js"></script>
+
+  </html>
+
