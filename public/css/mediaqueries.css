@@ -25,7 +25,6 @@
 
 @media screen and (max-width: 68.75em) { /* 1100px/16px = 68.75em */ 
     .card-width-sm { max-width: 250rem; }
-
 }
 
 @media screen and (max-width: 50em) { /* 800px/16px = 50em */ 
@@ -70,8 +69,7 @@
         max-height: 100%;
     }
     .icon-position-sm { 
-        margin-top: var(--distance-18);
-        margin-right: var(--distance-6); 
+        margin-top: var(--distance-15);
         font-size: var(--display-lg) !important;
     }
     .color-text-sm { color: var(--color-light) !important; }
@@ -87,5 +85,8 @@
     .new-icon-sm { 
         top: var(--distance-18);
         left: var(--distance-4);
+    }
+    .new-icon-exception {
+        top: var(--distance-14);
     }
 }  

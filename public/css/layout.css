@@ -221,4 +221,5 @@ a:hover {
   margin-top: var(--distance-4); 
 }
 
+.pointer { cursor: pointer; }
   

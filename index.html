@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/base.css">
-    <link rel="stylesheet" href="./public/css/layout.css">
-    <link rel="stylesheet" href="./public/css/flex.css">
-    <link rel="stylesheet" href="./public/css/mediaqueries.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c016a9893b.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/css/base.css">
+  <link rel="stylesheet" href="./public/css/layout.css">
+  <link rel="stylesheet" href="./public/css/flex.css">
+  <link rel="stylesheet" href="./public/css/mediaqueries.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c016a9893b.js" crossorigin="anonymous"></script>
 
-    <title>Web shop</title>
+  <title>Web shop</title>
 </head>
 
   <body>
@@ -33,13 +33,13 @@
               </button>
               <ul id="list" class="display-flex flex-column align-items-left align-content-center lh-lg bg-lightturquoise text-size-xs list-style-none no-list">
                 <li class="display-flex flex-column align-items-left">
-                  <a href="#" class="list-item text-decoration-none text-darkturquoise ml-2">Grace Hopper</a>
+                  <a href="" class="list-item text-decoration-none text-darkturquoise ml-2">Grace Hopper</a>
                 </li>
                 <li class="display-flex flex-column align-items-left">
-                  <a href="#" class="list-item text-decoration-none text-darkturquoise ml-2">Ada Lovelace</a>
+                  <a href="" class="list-item text-decoration-none text-darkturquoise ml-2">Ada Lovelace</a>
                 </li>
                 <li class="display-flex flex-column align-items-left">
-                  <a href="#" class="list-item text-decoration-none text-darkturquoise ml-2">Margaret Hamilton</a>
+                  <a href="" class="list-item text-decoration-none text-darkturquoise ml-2">Margaret Hamilton</a>
                 </li>
               </ul>
           </div>
@@ -169,7 +169,6 @@
 
     </header>
 
-
     <!-- Product Section -->
     <section class="display-flex flex-row max-width flex-column-sm margin-top-sm">
 
@@ -217,6 +216,7 @@
 
         <!-- Product Card -->
         <div class="product-card product-card-sm product-transition display-flex position-relative box-shadow border-xs-grey m-6 item-flex-column-sm pic-justify-center-sm pic-align-c-center-sm pic-align-i-center-sm card-width-lg card-width-sm card-width-xs mt-0-sm ">
+          
           <!-- Image of the product card -->
           <div class="no-flex-shrink img-size bg-pink background-color-sm">
             <!-- Free image from Unsplash site -->            
@@ -233,18 +233,20 @@
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#" class=""><i class="fas fa-cart-plus text-size-lg text-darkturquoise"></i></a>
+                <a class="text-darkturquoise pointer"><i class="fas fa-cart-plus text-size-lg"></i></a>
               </div>
-                <!-- Icon Star with rating -->
-                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                  3<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
-               </div>
+
+              <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                3 <a class="pointer"><i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+              </div>
           </div>
           
           <!-- Icon Heart -->
           <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
-            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
+            <a class="pointer"><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
+
         </div>
 
         <!-- Product Card -->
@@ -265,17 +267,18 @@
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#" class="autofill"><i class="fas fa-cart-plus text-size-lg"></i></a>
+                <a class="text-darkturquoise pointer"><i class="fas fa-cart-plus text-size-lg"></i></a>
               </div>
-                <!-- Icon Star with rating -->
-                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6 text-darkturquoise">
-                  4.5<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
-               </div>
+
+              <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6 text-darkturquoise">
+                4.5<a class="pointer"><i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+              </div>
           </div>      
 
           <!-- Icon Heart -->
           <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
-            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
+            <a class="pointer"><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
 
           <div class="position-absolute bg-turquoise text-bold ls-spacing-xs text-light text-size-xxs t-0 l-0 p-1">
@@ -301,11 +304,11 @@
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
+                <a class="text-darkturquoise pointer"><i class="fas fa-cart-plus text-size-lg"></i></a>
               </div>
                 <!-- Icon Star with rating -->
                 <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                  4<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+                  4<a class="pointer"><i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
                </div>
           </div>
           
@@ -315,7 +318,7 @@
 
           <!-- Icon Heart -->
           <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
-            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
+            <a class="pointer"><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>    
 
@@ -327,9 +330,7 @@
             <img src="./public/images/products/blackheadphones.jpg" class="mt-15 display-flex align-content-center img-max-width img-xs-width" alt="Image of black headphones">
           </div>
           
-          <div class="new-icon circle new-icon-sm">
-            NEW!
-          </div>
+          <div class="new-icon circle new-icon-sm new-icon-exception">NEW!</div>
 
           <div class="p-6 display-flex flex-column position-relative ">
               <h2 class="text-size-lg text-darkturquoise">Cooli 2.0</h2>
@@ -341,17 +342,19 @@
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
+                <a class="text-darkturquoise pointer"><i class="fas fa-cart-plus text-size-lg"></i></a>
               </div>
-                <!-- Icon Star with rating -->
-                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6 ">
-                  3.5<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
-               </div>
+
+              <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                3.5<a class="pointer"><i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+              </div>
+
             </div>
           
           <!-- Icon Heart -->
           <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
-            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
+            <a class="pointer"><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>        
         
@@ -373,17 +376,19 @@
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
+                <a class="text-darkturquoise pointer"><i class="fas fa-cart-plus text-size-lg"></i></a>
               </div>
-                <!-- Icon Star with rating -->
-                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                  4<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
-               </div>
+ 
+              <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                4<a class="pointer"><i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+              </div>
+
           </div>
           
           <!-- Icon Heart -->
           <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm color-text-sm">
-            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
+            <a class="pointer"><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>   
         
@@ -395,9 +400,7 @@
             <img src="./public/images/products/switch.jpg" class="mt-20 justify-content-center align-items-center img-max-width img-xs-width" alt="Image of a laptop">
           </div>
                     
-          <div class="new-icon circle new-icon-sm">
-            NEW!
-          </div>
+          <div class="new-icon circle new-icon-sm">NEW!</div>
 
           <div class="p-6 display-flex flex-column position-relative ">
               <h2 class="text-size-lg text-darkturquoise">Switches 3.1</h2>
@@ -409,17 +412,18 @@
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
+                <a class="text-darkturquoise pointer"><i class="fas fa-cart-plus text-size-lg"></i></a>
               </div>
-                <!-- Icon Star with rating -->
-                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                  5<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
-               </div>
+  
+              <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                5<a class="pointer"><i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+              </div>
           </div>        
 
           <!-- Icon Heart -->
           <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart">
-            <a href="#" class=""><i class="fas fa-heart text-size-lg heart icon-position-sm"></i></a>
+            <a class="pointer"><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>   
  
@@ -431,9 +435,7 @@
             <img src="./public/images/products/videocamera.jpg" class="mt-15 justify-content-center align-items-center img-max-width img-xs-width" alt="Image of a laptop">
           </div>
 
-          <div class="new-icon circle new-icon-sm">
-            NEW!
-          </div>
+          <div class="new-icon circle new-icon-sm new-icon-exception">NEW!</div>
           
           <div class="p-6 display-flex flex-column position-relative ">
               <h2 class="text-size-lg text-darkturquoise">Pro Camera 2021</h2>
@@ -445,17 +447,18 @@
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
+                <a class="text-darkturquoise pointer"><i class="fas fa-cart-plus text-size-lg"></i></a>
               </div>
-                <!-- Icon Star with rating -->
-                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                  4.5<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
-               </div>
+    
+              <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                4.5<a class="pointer"><i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+              </div>
           </div>      
 
           <!-- Icon Heart -->
           <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
-            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
+            <a class="pointer"><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>   
         
@@ -477,12 +480,13 @@
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
+                <a class="text-darkturquoise pointer"><i class="fas fa-cart-plus text-size-lg"></i></a>
               </div>
-                <!-- Icon Star with rating -->
-                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                  3<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
-               </div>
+
+              <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                3<a class="pointer"><i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+              </div>
           </div>
           
           <div class="position-absolute bg-turquoise text-light text-bold text-size-xxs t-0 l-0 p-1">
@@ -491,7 +495,7 @@
 
           <!-- Icon Heart -->
           <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart">
-            <a href="#" class=""><i class="fas fa-heart text-size-lg heart icon-position-sm"></i></a>
+            <a class="pointer"><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>   
 
@@ -513,12 +517,14 @@
 
               <!-- Icon Cart -->
               <div class="position-absolute b-0 l-0 mb-6 ml-6"> 
-                <a href="#"><i class="fas fa-cart-plus text-size-lg text-darkturquoise "></i></a>
+                <a class="text-darkturquoise pointer"><i class="fas fa-cart-plus text-size-lg"></i></a>
               </div>
-                <!-- Icon Star with rating -->
-                <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
-                  3<i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
-               </div>
+
+              <!-- Icon Star with rating -->
+              <div class="position-absolute b-0 r-0 mr-4 mb-0 r-0 mr-6 mb-6">
+                3<a class="pointer"><i class="display-flex flex-row fas fa-star text-size-lg ml-2 star"></i></a>
+              </div>
+
           </div>
           
           <div class="position-absolute bg-turquoise text-light text-bold text-size-xxs t-0 l-0 p-1">
@@ -527,7 +533,7 @@
 
           <!-- Icon Heart -->
           <div class="position-absolute t-0 r-0 mt-6 mr-6 icon-heart icon-position-sm">
-            <a href="#" class=""><i class="fas fa-heart text-size-lg heart"></i></a>
+            <a class="pointer"><i class="fas fa-heart text-size-lg heart"></i></a>
           </div>
         </div>        
 
@@ -549,10 +555,10 @@
             <span>info@infostore.com</span>
           </div>
         </div>
-        <a href="#" class="text-size-xs text-turquoise">Click here to subscribe to our newsletter</a>
+        <a href="#" class="text-size-xs text-turquoise mb-15">Click here to subscribe to our newsletter</a>
       
     </footer>
-    
+
   </body>
 
   <script src="index.js"></script>
