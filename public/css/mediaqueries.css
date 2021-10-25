@@ -68,11 +68,10 @@
         max-width: 100%;
         max-height: 100%;
     }
-    .icon-position-sm { 
+    /* .icon-position-sm { 
         margin-top: var(--distance-15);
         font-size: var(--display-lg) !important;
-    }
-    .color-text-sm { color: var(--color-light) !important; }
+    } */
     .justify-content-center-sm {justify-content: center; }
     .justify-content-space-around-sm { justify-content: space-around !important; } 
     .no-margin-left-sm { margin-left: var(--distance-0) !important; }
@@ -83,10 +82,13 @@
     .pic-align-c-center-sm { align-content: center; }
     .pic-align-i-center-sm { align-items: center; }
     .new-icon-sm { 
-        top: var(--distance-18);
-        left: var(--distance-4);
+        margin-top: var(--distance-6);
+        left: var(--distance-2);
+
+        top: var(--distance-12);
+        margin-left: var(--distance-2)
     }
-    .new-icon-exception {
+    /* .new-icon-exception {
         top: var(--distance-14);
-    }
+    } */
 }  

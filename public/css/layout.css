@@ -35,6 +35,7 @@
 
 .mb-20, .my-20 { margin-bottom: var(--distance-20); }
 .mt-20 { margin-top: var(--distance-20); }
+.mt-24 { margin-top: var(--distance-24); }
 
 .mr-1, .mx-1 { margin-right: var(--distance-1); } /* Equivalent to 1rem */
 .ml-1, .mx-1 { margin-left: var(--distance-1); }
@@ -195,16 +196,6 @@ a:hover {
 /* Image Settings */
 .img-size { max-width: 30%; max-height: 100%; }
 .img-max-width { max-width: 100%; }
-
-.icon-heart { 
-  position: absolute;
-  color: var(--color-darkturquoise);
-  top: var(--distance-0); 
-  right: var(--distance-0); 
-  margin-top: (--distance-6);
-  margin-right: (--distance-6);
-  text-decoration: none;
-}  
 
 .heart { color: var(--color-lightgrey); }
 
