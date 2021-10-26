@@ -27,6 +27,7 @@
 .justify-content-around { justify-content: space-around; }
 .justify-content-space-evenly { justify-content: space-evenly; }
 .justify-content-space-around { justify-content: space-around}
+.justify-content-left { justify-content: left; }
 .justify-content-flex-end { justify-content: flex-end; }
 .align-items-center { align-items: center; }
 .align-items-left { align-items: left; }

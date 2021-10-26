@@ -47,6 +47,8 @@
 .ml-4, .mx-4 { margin-left: var(--distance-4); }
 .mr-6, .mx-6 { margin-right: var(--distance-6); } /* Equivalent to 1.5rem */
 .ml-6, .mx-6 { margin-left: var(--distance-6); }
+.mr-20 { margin-right: var(--distance-20); }
+.ml-20 { margin-left: var(--distance-20); }
 
 .mr-12, .mx-12 { margin-bottom: var(--distance-12); }
 .mr-20, .mx-20 { margin-bottom: var(--distance-20); }
@@ -67,10 +69,13 @@
 .p-15 { padding: var(--distance-15); }
 
 .product-card { max-width: 30%; max-height: 55%; }
-.box-shadow { box-shadow: 0px px 6px var(--color-lightgrey); }
+.box-shadow { box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+.opacity { opacity: 25%; }
 .product-transition { transition: all 300ms ease-out; }
 .product-card:hover { 
-  box-shadow: 0px 6px 28px var(--color-lightgrey); 
+  box-shadow: 0px 4px 12px var(--color-lightgrey); 
+  /* box-shadow: 0px 4px 6px var(--color-lightgrey);  */
+  
 }
 
 /* Width settings */
@@ -83,7 +88,7 @@
 
 /* Height Settings */
 .height-nav { height: 6rem; }
-.height-footer { height: 20rem; }
+.height-footer { height: 25rem; }
 
 /* Typography setting */
 .text-decoration-none { text-decoration: none; }
@@ -196,6 +201,7 @@ a:hover {
 /* Image Settings */
 .img-size { max-width: 30%; max-height: 100%; }
 .img-max-width { max-width: 100%; }
+.creditcard-size { max-height: 50%; max-width: 50%; }
 
 .heart { color: var(--color-lightgrey); }
 
