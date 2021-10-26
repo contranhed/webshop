@@ -7,7 +7,7 @@
 
 
 /** 
- * Click event - drops down and fold a menu when user clicks on the button.
+ * Click event - drops down and folds a menu when user clicks on the button.
  * 
  */ 
 const button = document.getElementById("btn")
